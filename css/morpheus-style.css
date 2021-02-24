@@ -2978,10 +2978,7 @@ h3.tit-line {padding: 2.4rem 0 1.6rem;color: #000;font-size: 1.4rem;font-weight:
 
 
 
-@media (prefers-color-scheme: light) {
-  .header .prev {background: url(../img/ico-prev.png) no-repeat center center;background-size: 2.8rem;}
-  .header .home {background: url(../img/ico-home.png) no-repeat center center;background-size: 2.8rem;}
-}
+
 @media (prefers-color-scheme: dark) {
   .header .prev {background: url(../img/btn-icon-cancel.png) no-repeat center center;background-size: 2.8rem;}
   .header .home {background: url(../img/btn-icon-delete.png) no-repeat center center;background-size: 2.8rem;}
