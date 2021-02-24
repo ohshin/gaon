@@ -2984,11 +2984,6 @@ h3.tit-line {padding: 2.4rem 0 1.6rem;color: #000;font-size: 1.4rem;font-weight:
   .header .home {background: url(../img/btn-icon-delete.png) no-repeat center center;background-size: 2.8rem;}
 }
 
-:root {
-	--div-main-color: #f00;
-	--div-bg-color: #fff;
-}
-.header h1, .big-title3 {color: var(--div-main-color);background: var(--div-bg-color);}
 
 
 
