@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper main">
+        <header class="header">
+            <div class="profile-info">
+                <p class="name"><button><strong>김하나</strong>님!</button></p>
+                <p class="date">2020-10-27 (월)</p>
+            </div>
+            <button class="push animation"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>            
+        </header>
+        <div class="main-notice">
+            <button>풀무원, 2020년 ESG 평가 최우수기업상 수상 식품기업 최초 4년 연속 A+등급</button>
+            <button>풀무원녹즙, 건강검진 결과 토대로 녹즙 추천하는 ‘개인맞춤형 녹즙 구독 서비스’ 론칭</button>
+        </div>
+        <div class="content" id="content">
+            <div class="container">
+                <div class="main-quick-menu">
+                    <ul>
+                        <li class="frist">
+                            <button class="btn-delivery">
+                                <h3 class="tit">배송조회</h3>
+                                <span>NEW <strong>20</strong>건</span>
+                            </button>
+                            <button class="color-change" onclick="layer_open('layer02'); return false;"></button>
+                            </li>
+                        <li>
+                            <button class="btn-custom">
+                                <h3 class="tit"><span class="star">맞춤제품</span></h3>
+                            </button>
+                        </li>
+                        <li><button class="btn-customer">
+                            <h3 class="tit">고객등록</h3>
+                            <span>새로운 인연! 마음을 담으세요!</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-order">
+                                <h3 class="tit">주문등록</h3>
+                                <span>소중한 인연의 건강을 위한!</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-swipe">
+                    <div id="intro-pagination" class="swiper-pagination"></div>
+                    <div class="swiper-container quick-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <button class="btn-payment" onclick="layer_open('layer01'); return false;">즉시결제</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="btn-info">정보공유</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="btn-collection">수금관리</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-footer-btn">
+                    <button class="btn-campus">
+                        <span class="txt">나만의 배움공간 !</span>
+                        <span class="tit">멀티캠퍼스 바로가기</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 사이드메뉴 -->
+    <div class="all_menu">
+        <div class="menu_top">
+            <button class="menu_close">닫기</button>
+        </div>
+        <div class="side-animate">                
+            <div class="info">
+                <p class="name"><strong>김하나</strong>(pulmuone12034)</p>
+                <span class="time">최근 접속 2020.12.01 14:28:49</span>
+            </div>
+            <div class="btn-side">
+                <button class="btn-mypage" onclick ="location.href='MO_mypage_1200.html'">마이페이지</button>
+                <button class="btn-alarm on">알림함<span>99+</span></button>
+            </div>
+            <div class="search-side">
+                <label>
+                    <input type="text" title="검색" placeholder="검색할 메뉴명을 입력해주세요.">
+                </label>
+                <button class="btn-search">검색</button>
+            </div>
+            <!-- 전체메뉴 -->
+            <ul class="menu" style="display: none;">
+                <li>
+                    <button class="on">기준정보</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>주문관리</button>
+                    <ul>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>마감관리</button>
+                    <ul>
+                        <li><button>가맹점재고관리</button></li>
+                        <li><button>고객구역별음용수정(배송)</button></li>
+                        <li><button>가맹점별스텝고객별일일판매현황</button></li>
+                        <li><button>거래선담보채권현황</button></li>
+                        <li><button>고객수금처리</button></li>
+                        <li><button onclick ="location.href='A_05_detail_1.html'">세일즈그룹수수료조회</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>커뮤니케이션</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>가맹점관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>분석관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>VOC관리</button>
+                    <ul>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 검색 -->
+            <div class="search-side-list">
+                <div class="search-result">총 <strong>3</strong>건</div>
+                <ul>
+                    <li><button class="btn-search-result">메뉴는 hidden 상태임<em>조회</em></button></li>
+                    <li><button class="btn-search-result">품목정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                    <li><button class="btn-search-result">고객정보<em>조회</em></button></li>
+                </ul>
+            </div>
+            <div class="pop-footer-btn">
+                <button class="btn-reset">초기화</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+
+    <script>
+        //배송조회,맞춤제품
+        var swiper = new Swiper('.quick-swiper', {
+            slidesPerView: 'auto',
+            //centeredSlides: true,
+            loop : true,
+            spaceBetween: 10,
+            speed: 1000,      
+            watchSlidesVisibility : true, 
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },   
+        });
+    </script>
+</body>
+</html>

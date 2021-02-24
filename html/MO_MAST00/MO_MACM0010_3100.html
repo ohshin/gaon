@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>고객정보조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객정보조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content" id="content">
+            <div class="customer-detail head">
+                <div class="title top">
+                    <span class="company-name">[가상] 사무실 | 1</span>
+                    <span class="name">홍길동</span>                                   
+                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                    <span class="tel">010 - 0000 - 0000</span>
+                    <span class="no drinking">휴면</span>
+                </div>
+            </div>
+            <div class="top-menu tab-sticky">
+                <div class="tabs-menu hbox">
+                    <button class="active">고객 정보</button>
+                    <button>정기 결제 정보</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="wrap_cons education">
+                    <div class="cons animated05s fadeInUp">
+                        <div class="setp-information-list pdlg0">
+                            <h4>기본 고객 정보</h4>
+                            <!-- 일반고객 -->
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>고객유형</dt>
+                                    <dd>일반고객</dd>
+                                </dl>
+                                <dl>
+                                    <dt>고객명</dt>
+                                    <dd>홍길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>휴대폰번호</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>관할구역</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>성별</dt>
+                                    <dd>남</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>배송주소</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>배송순번</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>현관비밀번호</dt>
+                                    <dd>홍길동</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>관리메모</dt>
+                                    <dd>-</dd>
+                                </dl>                        
+                            </div>  
+                            <!-- 특수기업/거래처 -->
+                            <div class="setp-list w130" style="display: none;">
+                                <dl>
+                                    <dt>고객유형</dt>
+                                    <dd>특수기업/거레처</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업자명</dt>
+                                    <dd>홍길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사업자번호</dt>
+                                    <dd>123-12-12345</dd>
+                                </dl>
+                                <dl>
+                                    <dt>휴대폰번호</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>관할구역</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>배송주소</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>배송순번</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>대표자명</dt>
+                                    <dd>홍길동</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>업종</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>업태</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>관리메모</dt>
+                                    <dd>-</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl>                               
+                            </div> 
+                            <h4>고객등록 이용약관</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>정보수집/제3자 <br>제공 동의 증빙</dt>
+                                    <dd class="attach-list">
+                                        <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                        <p class="btn-list">
+                                            <span class="del">
+                                                <button class="attach-del">삭제</button>
+                                                <button><span>붙임1.첨부파일</span></button>
+                                            </span>
+                                            <span class="del">
+                                                <button class="attach-del">삭제</button>
+                                                <button><span>붙임1.첨부파일</span></button>
+                                            </span>
+                                        </p>
+                                        <!-- 첨부파일만 있는 경우 -->
+                                        <p class="btn-list">
+                                            <button><span>붙임1.첨부파일 .pdf</span></button>
+                                            <button><span>붙임1.첨부파일 .pdf</span></button>
+                                        </p>
+                                    </dd>
+                                </dl>                                                             
+                            </div> 
+                            <h4>마케팅활용</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>마케팅활용 동의여부</dt>
+                                    <dd>동의함</dd>
+                                </dl>                                                             
+                            </div>
+                            <!-- 일반고객 -->
+                            <div>
+                                <h4>배송정보</h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>전화번호</dt>
+                                        <dd>000-000-0000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>배송메모</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>배송시간</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>보냉팩수</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>집주소</dt>
+                                        <dd>-</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>사무실주소</dt>
+                                        <dd>-</dd>
+                                    </dl>                                                           
+                                </div>
+                                <h4>청구정보</h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>직접수금일자</dt>
+                                        <dd>000-000-0000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>직접결제수단</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>청구서 수신방법</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>이메일 주소</dt>
+                                        <dd>2</dd>
+                                    </dl>                                                                                              
+                                </div>
+                                <h4>마캐팅정보</h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>건강정보</dt>
+                                        <dd>위, 간, 장</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>기념일정보</dt>
+                                        <dd>생일 | 2020-01-01</dd>
+                                    </dl>                                                                                               
+                                </div>
+                            </div>  
+                            <h4>마진그룹</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>마진그룹사용</dt>
+                                    <dd>사용 or 미사용</dd>
+                                </dl>
+                                <dl>
+                                    <dt>마진그룹</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>마진그룹 시작일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>                                                            
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="cons animated05s fadeInUp">
+                        <div class="setp-information-list pdlg0">
+                            <h4>결제정보</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>결제자명</dt>
+                                    <dd>홍길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>결제자연락처</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>정기결제수단</dt>
+                                    <dd>CMS</dd>
+                                </dl>
+                                <dl>
+                                    <dt>약정일자동결제</dt>
+                                    <dd>Y</dd>
+                                </dl>                                                                
+                            </div>
+                            <!-- CMS -->
+                            <div class="cms-detail">
+                                <h4>CMS계좌정보</h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>신청 상태</dt>
+                                        <dd>
+                                            <p>고객등록예정</p>
+                                            <p>접수예정</p>
+                                            <p>접수중</p>
+                                            <p class="red">출금실패</p>
+                                            <p class="red">승인반려</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>신청구분</dt>
+                                        <dd>모바일등록 <br>(신청일 : 2020-01-01)</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>출금은행</dt>
+                                        <dd>고객등록예정</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>출금계좌번호</dt>
+                                        <dd>고객등록예정</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>예금주명</dt>
+                                        <dd>고객등록예정</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>생년월일</dt>
+                                        <dd>고객등록예정</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제등록일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>출금약정일</dt>
+                                        <dd>5일</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제시작일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>현금영수증 자진발급</dt>
+                                        <dd>Y</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>현금영수증 발급번호</dt>
+                                        <dd>000000000000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>현금영수증구분</dt>
+                                        <dd>개인</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>CMS증빙파일</dt>
+                                        <dd class="attach-list">
+                                            <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                            <p class="btn-list">
+                                                <span class="del">
+                                                    <button class="attach-del">삭제</button>
+                                                    <button><span>붙임1.첨부파일</span></button>
+                                                </span>
+                                                <span class="del">
+                                                    <button class="attach-del">삭제</button>
+                                                    <button><span>붙임1.첨부파일</span></button>
+                                                </span>
+                                            </p>
+                                            <!-- 첨부파일만 있는 경우 -->
+                                            <p class="btn-list">
+                                                <button><span>붙임1.첨부파일 .pdf</span></button>
+                                            </p>
+                                        </dd>
+                                    </dl>                                                             
+                                </div>
+                            </div>
+                            <!-- 신용카드정보 -->  
+                            <div class="card-detail">
+                                <h4>신용카드정보</h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>신청구분</dt>
+                                        <dd>모바일등록<br>(신청일 : 2020-01-01)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>카드인증상태</dt>
+                                        <dd>
+                                            <p>인증완료</p>
+                                            <p class="red">미인증</p>
+                                            <p class="red">유효기간만료</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>카드번호</dt>
+                                        <dd>0000-00-00000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>유효기간</dt>
+                                        <dd>25/02</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>명의자</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>생년월일</dt>
+                                        <dd>19990101</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제등록일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>출금약정일</dt>
+                                        <dd>5일</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제시작일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>                                                                                                
+                                </div>
+                            </div>
+
+                            <!-- 가상계좌정보 -->  
+                            <div class="account-detail">
+                                <h4 class="posi-r">가상계좌정보<button class="info-change-arrow rgt0">계좌정보공유</button></h4>
+                                <div class="setp-list w130">
+                                    <dl>
+                                        <dt>은행코드</dt>
+                                        <dd>은행코드</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>가상계좌번호</dt>
+                                        <dd>1324567890</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제등록일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정기결제시작일</dt>
+                                        <dd>2020-01-01</dd>
+                                    </dl>                                                                                                                                   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 등록된 결제정보가 없습니다.  -->
+                        <div class="search-no-data">등록된 결제정보가 없습니다.</div>
+                    </div>
+                    
+                </div>
+            </div> 
+                         
+        </div>
+        <div class="btn-footer div-split">
+
+            <!-- 고객 정보 -->
+            <div class="btn-tabs">
+                <button class="footer-dark-gray wp45">주문조회</button>
+                <button class="footer-dark-blue wp55">결제정보등록</button>
+            </div>
+
+            <!-- 정기 결제 정보 -->
+            <div class="w100p">
+
+                <!-- CMS계좌정보 -->
+                <!-- 등록된 결제정보 없음 -->
+                <p class="btn-tabs" style="display: none;"><button class="footer-dark-blue wp60">결제정보 등록</button></p>     
+
+                <!-- 신청 상태: 접수중, 출금중, 버튼없음 -->
+
+                <!-- 신청 상태: 접수승인, 출금예정, 출금승인, 출금실패, 승인반려 -->
+                <p class="btn-tabs">
+                    <button class="footer-dark-gray wp45">결제정보 삭제</button>
+                    <button class="footer-dark-blue wp55">결제정보 변경</button>
+                </p>
+                <!-- 신청 상태: 승인반려 -->
+                <p class="btn-tabs" style="display: none;"><button class="footer-dark-blue">재등록</button></p>
+
+                <!-- 신청 상태: 고객등록예정 -->
+                <p style="display: none;">
+                     <button class="footer-dark-gray">모바일 등록 재전송</button>
+                    <button class="footer-dark-blue wp55">결제정보 변경</button>
+                </p>
+                <!-- 신청 상태: 접수예정 -->
+                <p class="btn-tabs" style="display: none;">
+                    <button class="footer-dark-gray wp40">정보 수정</button>
+                    <button class="footer-dark-blue wp60">승인 요청</button>
+                </p>
+
+
+                <!-- 신용카드정보 -->
+                <!-- 카드인증상태: 고객등록예정 -->
+                <p style="display: none;">
+                    <button class="footer-dark-gray wp40">모바일 등록 재전송</button>
+                    <button class="footer-dark-blue wp60">결제정보 변경</button>
+                </p>
+                <!-- 카드인증상태: 고객등록완료, 미인증, 유효기간만료, 인증완료 -->
+                <p class="btn-tabs" style="display: none;">
+                    <button class="footer-dark-gray wp40">결제정보 삭제</button>
+                    <button class="footer-dark-blue wp60">결제정보 변경</button>
+                </p>
+
+                <!-- 가상계좌 -->
+                <p class="btn-tabs" style="display: none;">
+                    <button class="footer-dark-gray wp40">결제정보 삭제</button>
+                    <button class="footer-dark-blue wp60">결제정보 변경</button>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <button class="btn-floating-top" id="top">TOP</button> 
+</body>
+</html>

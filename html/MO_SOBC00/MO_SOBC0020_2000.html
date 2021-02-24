@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>가맹점거래내역조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>가맹점거래내역조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="top-search-box">
+                    <!-- head-quarters 본사, affiliat 가맹점 -->
+                    <div class="education-target-search head-quarters off">
+                        <dl>
+                            <dt>가맹점</dt>
+                            <dd>
+                               <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">전체</button>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>관할구역</dt>
+                            <dd>
+                               <!-- 선택시 class active 추가  -->
+                                <button class="btn-select" disabled>전체</button>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>입고일자</dt>
+                            <dd>
+                                <p class="month-input">
+                                    <input type="text" class="cal w100p" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>고객명</dt>
+                            <dd><input type="text" class="type1 w100p" placeholder="고객명을 입력해주세요."></dd>
+                        </dl>
+                        <dl>
+                            <dt>품목명</dt>
+                            <dd><input type="text" class="type1 w100p" placeholder="품목명을 입력해주세요."></dd>
+                        </dl>
+                    </div> 
+                    <div>
+                        <button class="btn-more"><span>상세검색</span></button>
+                        <button class="top-dark-blue" disabled>조회</button>
+                    </div>                           
+                </div>
+                
+               
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                    <span class="vat">(VAT별도)</span>
+                </div>
+                
+                <div class="content-wrap step">
+                    <div class="customer-list">
+                        <ul class="order-list out-order">
+                            <li>
+                                <div class="detail">
+                                    <span class="area-order-amount">구역 일자별 소계</span>
+                                    <span class="date2">2020-01-01</span>
+                                </div>  
+                                <div class="order-amount bdt0">
+                                    <dl>
+                                        <dt>담당 모닝스텝</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 품목</dt>
+                                        <dd>32 건</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 확정수량</dt>
+                                        <dd>2,122 건</dd>
+                                    </dl>
+                                </div>                              
+                                <div class="total-order-amount"><span class="left">합계금액</span> <em>35,000</em>원</div>
+                            </li> 
+                                                    
+                        </ul>
+                    </div>
+                    <div class="education-list pd12">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="area-name">아임리얼 아임유어레몬에이드270ml</span>
+                                    <span class="etc">
+                                        <em>1.5g</em>
+                                        <em>EA</em>
+                                        <em>냉장</em>
+                                        <em>택배</em>
+                                        <em>D-2</em>
+                                        <em>과세</em>
+                                        <em>2,000원</em>
+                                    </span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="4">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>주문수량</th>
+                                                <th>증정수량</th>
+                                                <th>조정수량</th>
+                                                <th>확정수량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="total-order-amount"><span class="left">합계금액</span> <em>35,000</em>원</div>
+                                </button>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="etc">
+                                        <em>1.5g</em>
+                                        <em>EA</em>
+                                        <em>냉장</em>
+                                        <em>택배</em>
+                                        <em>D-2</em>
+                                        <em>과세</em>
+                                        <em>2,000원</em>
+                                    </span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="4">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>주문수량</th>
+                                                <th>증정수량</th>
+                                                <th>조정수량</th>
+                                                <th>확정수량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="total-order-amount"><span class="left">합계금액</span> <em>35,000</em>원</div>
+                                </button>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="etc">
+                                        <em>1.5g</em>
+                                        <em>EA</em>
+                                        <em>냉장</em>
+                                        <em>택배</em>
+                                        <em>D-2</em>
+                                        <em>과세</em>
+                                        <em>2,000원</em>
+                                    </span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="4">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>주문수량</th>
+                                                <th>증정수량</th>
+                                                <th>조정수량</th>
+                                                <th>확정수량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="total-order-amount"><span class="left">합계금액</span> <em>35,000</em>원</div>
+                                </button>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 검색결과없을시 -->
+                    <div class="search-no-data">검색결과가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

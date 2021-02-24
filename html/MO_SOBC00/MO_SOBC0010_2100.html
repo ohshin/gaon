@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>일자별 주문 목록 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>일자별 주문 목록</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>  
+        
+          
+        
+        
+        <div class="content" id="content">
+            <div class="top-search-box">
+                <button class="btn-top-select"><span>2020년 12월</span></button>
+                <div>
+                    <p>
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select">정기품목 전체</button> 
+                    </p>
+                    <p class="mgt10">
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select">품목 전체</button> 
+                    </p>
+                    <p class="mgt10">
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select">배송 전체</button> 
+                    </p>                      
+                </div>
+                <!-- 정기품목 전체 선택시 -->
+                <div>
+                    <h3 class="big-title3 mgt20">합계</h3>
+                    <div class="order-detail-info-list right">
+                        <dl>
+                            <dt>판매 금액</dt>
+                            <dd>30,000</dd>
+                        </dl>
+                        <dl>
+                            <dt>총 수량</dt>
+                            <dd>30,000</dd>
+                        </dl>
+                        <dl>
+                            <dt>총 증정 수량</dt>
+                            <dd>5</dd>
+                        </dl>                           
+                    </div>
+                </div>
+                <!-- 품목 전체 중 하나을 선택시 -->
+                <div style="display: none;">
+                    <h3 class="big-title3 mgt20">명일녹즙</h3>
+                    <div class="order-detail-info-list right">
+                        <dl>
+                            <dt>판매 금액</dt>
+                            <dd>30,000</dd>
+                        </dl>
+                        <dl>
+                            <dt>총단가</dt>
+                            <dd>30,000</dd>
+                        </dl>
+                        <dl>
+                            <dt>총 수량</dt>
+                            <dd>30,000</dd>
+                        </dl>
+                        <dl>
+                            <dt>총 증정 수량</dt>
+                            <dd>5</dd>
+                        </dl>                           
+                    </div>
+                </div>
+            </div>
+            <div class="order-box bg2">
+                <dl>
+                    <dt>주문마감</dt>
+                    <dd class="right"><em>01:20:20</em>남음</dd>
+                </dl>
+            </div>
+           
+            <div class="month-tbl">
+                <table>
+                    <colgroup>
+                        <col span="7">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="end"><button type="button" disabled><em>28</em></button></td>
+                            <td class="end"><button type="button" disabled><em>29</em></button></td>
+                            <td class="end"><button type="button" disabled><em>30</em></button></td>
+                            <td class="end"><button type="button" disabled><em>1</em></button></td>
+                            <td class="end"><button type="button" disabled><em>2</em></button></td>
+                            <td class="end"><button type="button" disabled><em>3</em></button></td>
+                            <td class="end"><button type="button" disabled><em>4</em></button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button"><em>5</em></button></td>
+                            <td><button type="button" class="today"><em>6</em></button></td>
+                            <td><button type="button"><em>7</em></button></td>
+                            <td><button type="button"><em>8</em></button></td>
+                            <td><button type="button"><em>9</em></button></td>
+                            <td><button type="button"><em>10</em></button></td>
+                            <td><button type="button"><em>11</em></button></td>
+                        </tr>
+                        <tr>											
+                            <td>
+                                <button type="button">
+                                    <em>12</em>
+                                    <span class="amount">
+                                        <strong>12</strong>
+                                        <strong>(2)</strong>
+                                    </span>
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button">
+                                    <em>13</em>
+                                    <span class="amount">
+                                        <strong>12</strong>
+                                        <strong>(2)</strong>
+                                    </span>
+                                </button>
+                            </td>
+                            <td><button type="button"><em>14</em></button></td>
+                            <td><button type="button"><em>15</em></button></td>
+                            <td><button type="button"><em>16</em></button></td>
+                            <td><button type="button"><em>17</em></button></td>
+                            <td><button type="button"><em>18</em></button></td>
+                        </tr>
+                        <tr>											
+                            <td><button type="button"><em>19</em></button></td>
+                            <td><button type="button"><em>20</em></button></td>
+                            <td>
+                                <button type="button">
+                                    <em>21</em>
+                                    <span class="amount">
+                                        <strong>12</strong>
+                                        <strong>(2)</strong>
+                                    </span>
+                                </button>
+                            </td>
+                            <td><button type="button"><em>22</em></button></td>
+                            <td><button type="button"><em>23</em></button></td>
+                            <td><button type="button"><em>24</em></button></td>
+                            <td><button type="button"><em>25</em></button></td>
+                        </tr>
+                        <tr>											
+                            <td><button type="button"><em>26</em></button></td>
+                            <td><button type="button"><em>27</em></button></td>
+                            <td><button type="button"><em>28</em></button></td>
+                            <td><button type="button"><em>29</em></button></td>
+                            <td><button type="button"><em>30</em></button></td>
+                            <td><button type="button"><em>31</em></button></td>
+                            <td class="end"><button type="button" disabled><em>1</em></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="dead-line">
+                <span class="deadline"><em>마감완료</em></span>
+            </div>
+
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

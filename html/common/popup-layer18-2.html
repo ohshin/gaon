@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+  <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+  <!-- MO_CLIO0030_1300(정렬 편집) 때문에 추가 -->
+  <script src="../../js/libs/jquery-ui.js"></script>
+  <!-- MO_CLIO0030_1300(정렬 편집) 때문에 추가 -->
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+    <script src="../../js/jquery.selectscroll.js"></script>
+
+    <style>
+        .btn-box .btn-detail {display: block; padding: 6px 0;font-size: 12px;margin: 10px 0;text-align: center;}
+        .btn-detail {text-align: left;border:0;color: #000;font-weight: normal;}
+    </style>
+</head>
+<body>
+	
+
+
+
+	<div class="container">
+		<div class="content">
+			<div class="section">
+				<h2>Initiate</h2>
+
+			<div class="section">
+				<h2>Style with CSS</h2>
+
+				<div class="example-cont">
+					<div class="example">
+						<select class="drum-select">
+							<option>1999</option>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+						</select>
+					</div>
+
+					
+				</div>
+
+				<div class="example-cont example-cont--code-first">
+					<div class="example">
+						<div class="drum drum-4"></div>
+					</div>
+
+					
+				</div>
+
+				
+		</div>
+	</div>
+
+
+
+
+	<!-- Server -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.drum.min.js"></script>
+
+	<!-- Local -->
+	<!-- <script src="../lib/jquery-3.4.1.min.js"></script>
+	<script src="../lib/jquery-ui.widget.js"></script>
+	<script src="../src/jquery.watch-drag.js"></script>
+	<script src="../src/jquery.drum.js"></script> -->
+
+	<script src="js/highlight.pack.js"></script>
+
+	<script>
+		$('.drum-select').drum({
+			classes: {
+				'drum-viewport': 'drum-2'
+			}
+		});
+		$('.drum').drum({
+			max: 10
+		});
+
+		hljs.initHighlightingOnLoad();
+	</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>답글쓰기 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>답글쓰기</h1>
+            <button class="close">&nbsp;</button>
+            <button class="writing" disabled>&nbsp;</button>  
+        </header>
+        
+        <div class="content" id="content">
+            <div class="community-writing">
+                <dl>
+                    <dt>구분</dt>
+                    <dd>
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select noline">가맹점1</button>
+                    </dd>
+                </dl>                
+                <dl>
+                    <dt>제목</dt>
+                    <dd>
+                        <input type="text" class="type1 noline w100p" value="[답장]여름휴가 일정 관하여 확인 부탁" placeholder="제목를 입력해 주세요.">                            
+                    </dd>
+                </dl>
+                <ul class="text-area2">                        
+                    <li>
+                        <div contenteditable="true" class="textarea2 w100p h100p" placeholder="메일 내용 입력">
+                            <div class="writing-mail-box">
+                                <p class="writing-mail"></p>
+                            </div>
+                            <div class="before-mail">
+                                ---원본 메시지---
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다.<br>
+
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다. <br>                               ------------------------------------------------------------------------------------------------------------------------------------------------- 
+                            </div>
+                            <div class="before-mail">
+                                ---원본 메시지---
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다.<br>
+
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다. <br>                               ------------------------------------------------------------------------------------------------------------------------------------------------- 
+                            </div>
+                        </div>
+                        <!-- 둘중에 하나을 골라서 사용 하세요. -->
+                        <textarea class="textarea w100p h100p" placeholder="메일 내용 입력" style="display: none;">
+                            ---원본 메시지---
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다.<br>
+
+                                내용이 표시됩니다.<br>
+                                에디터를 통해 삽입한 내용이 표시됩니다. <br>                               ------------------------------------------------------------------------------------------------------------------------------------------------- 
+                        </textarea>                         
+                    </li>
+                </ul>
+            </div>              
+        </div>
+    </div>
+</body>
+</html>

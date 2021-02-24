@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>결제정보 고객등록 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객등록</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>    
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="content-wrap step">
+                    <div class="customer-add">
+                        <h3 class="btitle">
+                            결제정보
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox3" checked="">
+                                    <span>주문자와 동일</span>
+                                </label>
+                            </div>
+                        </h3>
+                        <div class="customer-target">
+                            <dl>
+                                <dt>결제자명</dt>
+                                <dd><input type="text" class="type1 w100p" value="홍길동" placeholder="결제자명를 입력해주세요."></dd>
+                            </dl>
+                            <dl>
+                                <dt>결제자연락처</dt>
+                                <dd  class="content-hbox">
+                                    <div>
+                                       <!-- 선택시 class active 추가  -->
+                                       <button class="btn-select">010</button> 
+                                    </div>
+                                    <div><input type="tel" class="type1 w100p"></div>
+                                    <div><input type="tel" class="type1 w100p"></div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정기결제수단</dt>                                
+                                <dd class="month-radio">
+                                    <span><label><input type="radio" name="payment_group" data-in="cms"><em>CMS</em></label></span>
+                                    <span><label><input type="radio" name="payment_group" data-in="card"><em>신용카드</em></label></span>
+                                    <span><label><input type="radio" name="payment_group" data-in="account"><em>가상계좌</em></label></span>                                    
+                                </dd>
+                            </dl>             
+                        </div>
+                        <!-- CMS -->
+                        <div id="cms" class="cms-payment">
+                            <h3 class="btitle">CMS 계좌정보</h3>
+                            <div class="customer-target">
+                                <dl>
+                                    <dt>신청구분</dt>
+                                    <dd>
+                                        <div class="single-tab">
+                                            <button class="active">모바일등록</button>
+                                            <button>직접등록</button>
+                                        </div>
+                                        <div class="single_cons">
+                                            <!-- 모바일등록 -->
+                                            <div class="cons">
+                                                <!-- 등록화면 -->
+                                                <dl>
+                                                    <dt>모바일등록 안내</dt>
+                                                    <dd class="text-box">
+                                                        등록 완료 시 결제자 연락처로 
+                                                        CMS 계좌 등록 안내 메시지가 전달됩니다.                                                        
+                                                    </dd>
+                                                </dl>
+                                                <!-- 수정화면 -->
+                                                <dl>
+                                                    <dt>CMS 계좌 정보</dt>
+                                                    <dd class="text-box">
+                                                        <div class="cms-account-info">
+                                                            <dl>
+                                                                <dt>출금은행</dt>
+                                                                <dd>우리은행</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>출금계좌번호</dt>
+                                                                <dd>0000-0000-000000</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>예금주명</dt>
+                                                                <dd>홍길동</dd>
+                                                            </dl> 
+                                                            <dl>
+                                                                <dt>생년월일</dt>
+                                                                <dd>1999-01-01</dd>
+                                                            </dl>                                
+                                                        </div>                                                        
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>출금약정일</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>약정일자동결제</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>정기결제 시작일</dt>
+                                                    <dd class="month-input">
+                                                        <input type="text" class="cal w100p" title="정기결제 시작일" placeholder="YYYY.MM.DD">
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증 자진발급 (선택)</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증구분 (선택)</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증발급번호 (선택)</dt>
+                                                    <dd><input type="text" class="type1 w100p"  placeholder="현금영수증 발급번호를 입력해 주세요."></dd>
+                                                </dl>
+                                            </div>
+                                            <!-- 직접등록 -->
+                                            <div class="cons">
+                                                <dl>
+                                                    <dt>출금은행</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>출금계좌번호</dt>
+                                                    <dd><input type="tel" class="type1 w100p" value="홍길동" placeholder="숫자만 입력해 주세요."></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>예금주명</dt>
+                                                    <dd><input type="text" class="type1 w100p" value="홍길동" placeholder="예금주를 입력해 주세요."></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>생년월일/사업자번호</dt>
+                                                    <dd><input type="tel" class="type1 w100p" value="홍길동" placeholder="생년월일(19000101) 또는 사업자번호"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>출금약정일</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>약정일자동결제</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>정기결제 시작일</dt>
+                                                    <dd class="month-input">
+                                                        <input type="text" class="cal w100p" title="정기결제 시작일" placeholder="YYYY.MM.DD">
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>CMS 증빙파일</dt>
+                                                    <dd>
+                                                        <div class="text-box">CMS 증빙파일을 첨부해주세요.(사진 또는 스캔 문서)</div>
+                                                        <div class="setp-list">
+                                                             <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                                            <p class="btn-list mgt10" style="display: none;">
+                                                                <span class="del">
+                                                                    <button class="attach-del">삭제</button>
+                                                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다노출합니다.pdf</span></button>
+                                                                </span>
+                                                                <span class="del">
+                                                                    <button class="attach-del">삭제</button>
+                                                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                                </span>
+                                                            </p>
+                                                            <!-- 첨부파일만 있는 경우 -->
+                                                            <p class="btn-list mgt10" style="display: none;">
+                                                                <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                                <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                            </p>
+                                                            <button class="btn-attachment mgt20">파일첨부</button>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증 자진발급 (선택)</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증구분 (선택)</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>현금영수증발급번호 (선택)</dt>
+                                                    <dd><input type="text" class="type1 w100p"  placeholder="현금영수증 발급번호를 입력해 주세요."></dd>
+                                                </dl>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </dd>
+                                </dl>                                                    
+                            </div>
+                        </div>
+
+                        <!-- 신용카드 -->
+                        <div id="card" class="cms-payment">
+                            <h3 class="btitle">신용카드</h3>
+                            <div class="customer-target">
+                                <dl>
+                                    <dt>신청구분</dt>
+                                    <dd>
+                                        <div class="single-tab">
+                                            <button class="active">모바일등록</button>
+                                            <button>직접등록</button>
+                                        </div>
+                                        <div class="single_cons">
+
+                                            <!-- 모바일등록 -->
+                                            <div class="cons">                                                
+                                                <dl>
+                                                    <dt>신용카드정보</dt>
+                                                    <!-- 등록화면 -->
+                                                    <dd class="text-box">등록 완료 시 결제자 연락처로 신용카드 등록 안내 메시지가 전달됩니다.</dd>
+                                                    <!-- 수정화면 -->
+                                                    <dd class="text-box">
+                                                        <div class="cms-account-info">
+                                                            <dl>
+                                                                <dt>카드인증상태</dt>
+                                                                <dd>인증완료</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>카드번호</dt>
+                                                                <dd>0000-0000-000000</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>유효기간</dt>
+                                                                <dd>25/12</dd>
+                                                            </dl> 
+                                                            <dl>
+                                                                <dt>명의자</dt>
+                                                                <dd>홍길동</dd>
+                                                            </dl>                                
+                                                        </div>                                                        
+                                                    </dd>
+                                                </dl>                                                
+                                                <dl>
+                                                    <dt>출금약정일</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>약정일자동결제</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>정기결제 시작일</dt>
+                                                    <dd class="month-input">
+                                                        <input type="text" class="cal w100p" title="정기결제 시작일" placeholder="YYYY.MM.DD">
+                                                    </dd>
+                                                </dl>                                                
+                                            </div>
+                                            <!-- 직접등록 -->
+                                            <div class="cons">
+                                                <dl>
+                                                    <dt>신용카드정보</dt>
+                                                    <dd>
+                                                        <div class="text-box">신용카드 정보를 등록해주세요.</div>
+                                                        <div class="setp-list">
+                                                            <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                                            <p class="btn-list mgt10" style="display: none;">
+                                                                <span class="del">
+                                                                    <button class="attach-del">삭제</button>
+                                                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다노출합니다.pdf</span></button>
+                                                                </span>
+                                                                <span class="del">
+                                                                    <button class="attach-del">삭제</button>
+                                                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                                </span>
+                                                            </p>
+                                                            <!-- 첨부파일만 있는 경우 -->
+                                                            <p class="btn-list mgt10" style="display: none;">
+                                                                <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                                <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                                            </p>
+                                                            <button class="btn-attachment mgt20">신용카드 등록</button>
+                                                        </div>
+                                                    </dd>
+                                                    <dd class="text-box">
+                                                        <div class="cms-account-info">
+                                                            <dl>
+                                                                <dt>카드인증상태</dt>
+                                                                <dd>인증완료</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>카드번호</dt>
+                                                                <dd>0000-0000-000000</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>유효기간</dt>
+                                                                <dd>25/12</dd>
+                                                            </dl> 
+                                                            <dl>
+                                                                <dt>명의자</dt>
+                                                                <dd>홍길동</dd>
+                                                            </dl>                                
+                                                        </div>
+                                                        <button class="btn-attachment mgt20">신용카드 변경</button>                                                        
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>출금약정일</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>약정일자동결제</dt>
+                                                    <dd>
+                                                        <!-- 선택시 class active 추가  -->
+                                                        <button class="btn-select">선택해 주세요</button> 
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>정기결제 시작일</dt>
+                                                    <dd class="month-input"><input type="text" class="cal w100p" title="정기결제 시작일" placeholder="YYYY.MM.DD"></dd>
+                                                </dl>                                                
+                                            </div>
+
+                                            
+                                        </div>
+                                    </dd>
+                                </dl>                                                    
+                            </div>
+                        </div>
+
+                        <!-- 가상계좌 -->
+                        <div id="account" class="cms-payment">
+                            <h3 class="btitle">가상계좌</h3>
+                            <div class="customer-target">
+                                <dl>
+                                    <dt>은행</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">선택해 주세요</button> 
+                                    </dd>
+                                    <dd><button class="btn-attachment mgt10 mgb20" disabled>가상계좌번호 발급</button></dd>
+                                    <dd class="text-box">
+                                        <div class="cms-account-info">
+                                            <dl>
+                                                <dt>은행명</dt>
+                                                <dd>XX은행</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>예금주</dt>
+                                                <dd>XXX</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>가상계좌번호</dt>
+                                                <dd>123-12345-12345678</dd>
+                                            </dl>                                 
+                                        </div>                                                        
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>출금약정일</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">선택해 주세요</button> 
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>약정일자동결제</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">선택해 주세요</button> 
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>정기결제 시작일</dt>
+                                    <dd class="month-input">
+                                        <input type="text" class="cal w100p" title="정기결제 시작일" placeholder="YYYY.MM.DD">
+                                    </dd>
+                                </dl>                                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- 등록시 -->
+        <div class="btn-footer">
+            <button class="footer-dark-blue" disabled>등록 완료</button>
+        </div>
+         <!-- 수정시 -->
+         <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-gray wp40">취소</button>
+            <button class="footer-dark-blue wp60">수정 완료</button>
+        </div>
+    </div>
+</body>
+</html>

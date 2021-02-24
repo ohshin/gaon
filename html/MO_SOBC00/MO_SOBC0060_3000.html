@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>판촉스텝 주문조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>판촉스텝 주문조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="top-search-box  head bg2">
+                <!-- 본사용 -->
+                <div class="education-target-search promotion-central off" style="display: none;">
+                    <dl>
+                        <dt>배송유형</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>판촉스텝</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>판촉일자</dt>
+                        <dd class="mgt10">
+                            <p class="month-radio">
+                                <span>                                                
+                                    <label>
+                                        <input type="radio" name="radio1" checked="">
+                                        <em>1개월</em>
+                                    </label>											
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>3개월</em>
+                                    </label>										
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>6개월</em>
+                                    </label>										
+                                </span>
+                            </p>
+                        </dd>
+                        <dd class="mgt10">
+                            <p class="month-input">
+                                <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                <span class="txt-mark">~</span>
+                                <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>가맹점</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>상태</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>통합검색</dt>
+                        <dd><input type="text" class="type1 w100p" placeholder="고객명, 전화번호, 주소"></dd>
+                    </dl>
+                </div> 
+                <!-- 본사용 -->
+                <!-- 판촉스텝용 -->
+                <div class="education-target-search promotion-step off">
+                    <dl>
+                        <dt>배송유형</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>                   
+                    <dl>
+                        <dt>판촉일자</dt>
+                        <dd class="mgt10">
+                            <p class="month-radio">
+                                <span>                                                
+                                    <label>
+                                        <input type="radio" name="radio1" checked="">
+                                        <em>2개월</em>
+                                    </label>											
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>4개월</em>
+                                    </label>										
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>6개월</em>
+                                    </label>										
+                                </span>
+                            </p>
+                        </dd>
+                        <dd class="mgt10">
+                            <p class="month-input">
+                                <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                <span class="txt-mark">~</span>
+                                <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                            </p>
+                        </dd>
+                    </dl>                   
+                    <dl>
+                        <dt>상태</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>통합검색</dt>
+                        <dd><input type="text" class="type1 w100p" placeholder="고객명, 전화번호, 주소"></dd>
+                    </dl>
+                </div> 
+                <!-- 판촉스텝용 -->
+                <div>
+                    <button class="btn-more"><span>상세검색</span></button>
+                    <button class="top-dark-blue" disabled>조회</button>
+                </div>                         
+            </div>
+            <div class="container">
+                
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                </div>
+                <div class="content-wrap step">
+                    <div class="customer-list promotion">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                </button>
+                                <span class="receipt order">접수</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="name"><em class="search-txt">홍길동</em></span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                </button>
+                                <span class="return order">반려</span>
+                            </li>  
+                            <li>
+                                <button>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                </button>
+                                <span class="fix order">확정</span>
+                            </li>  
+                            <li>
+                                <button>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                </button>
+                                <span class="fix order">확정</span>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 등록된 글이 없습니다.  -->
+                    <div class="search-no-data">주문조회가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

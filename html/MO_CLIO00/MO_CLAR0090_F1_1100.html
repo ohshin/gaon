@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>현금영수증발급관리 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>현금영수증발급관리</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>  
+        
+          
+        
+        
+        <div class="content" id="content">
+            <div class="customer-detail head bg2">
+                <div class="title top bdb0 detail">
+                    <span class="company-name2">현금</span>
+                    <span class="name">홍길동</span>
+                    <span class="cash-ask drinking">요청</span> 
+                    <div class="order-amount mgt20">
+                        <p class="amount-right">실제 수금액 <em>10,000</em>개</p>   
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container"> 
+                <div class="content-wrap">
+                    <div>
+                        <h3 class="big-title3">발급정보</h3>
+                        <div class="order-detail-info-list bdb0 rgt">
+                            <dl>
+                                <dt>청구월</dt>
+                                <dd>2020-08</dd>
+                            </dl>
+                            <dl>
+                                <dt>승인상태</dt>
+                                <dd>승인</dd>
+                            </dl>                              
+                        </div>
+                    </div>
+
+                    <!-- 요청, 반려: 가맹점장, 스탭 -->
+                    <div style="display: none;">
+                        <h3 class="big-title3">발급정보</h3>
+                        <div class="order-detail-info-list bdb0 rgt">
+                            <dl>
+                                <dt>청구월</dt>
+                                <dd>2020-08</dd>
+                            </dl>
+                            <dl>
+                                <dt>승인상태</dt>
+                                <dd>미발급</dd>
+                            </dl> 
+                            <dl>
+                                <dt>발급번호</dt>
+                                <dd>123456789</dd>
+                            </dl>  
+                            <dl>
+                                <dt>현금영수증 발급액</dt>
+                                <dd>35,000 원</dd>
+                            </dl>                               
+                        </div>
+                    </div>
+
+                    <!-- 승인, 취소요청, 취소: 가맹점장, 스탭 -->
+                    <div style="display: none;">
+                        <h3 class="big-title3">발급정보</h3>
+                        <div class="order-detail-info-list bdb0 rgt">
+                            <dl>
+                                <dt>청구월</dt>
+                                <dd>2020-08</dd>
+                            </dl>
+                            <dl>
+                                <dt>승인상태</dt>
+                                <dd>승인</dd>
+                            </dl>                             
+                            <dl>
+                                <dt>발급번호</dt>
+                                <dd>123****89</dd>
+                            </dl> 
+                            <dl>
+                                <dt>거래유형</dt>
+                                <dd>소득공제</dd>
+                            </dl> 
+                            <dl>
+                                <dt>발급구분</dt>
+                                <dd>발급</dd>
+                            </dl> 
+                            <dl>
+                                <dt>발급일</dt>
+                                <dd>2020-08-08</dd>
+                            </dl> 
+                            <dl>
+                                <dt>승인번호</dt>
+                                <dd>E00000001</dd>
+                            </dl> 
+                            <dl>
+                                <dt>현금영수증발급액</dt>
+                                <dd>35,000 원</dd>
+                            </dl> 
+                            <dl>
+                                <dt>처리메시지</dt>
+                                <dd>성공</dd>
+                            </dl>                                
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    <h3 class="big-title3">수금정보</h3>
+                    <div class="order-detail-info-list bdb0 rgt">
+                        <dl>
+                            <dt>수금방법</dt>
+                            <dd>현금</dd>
+                        </dl>
+                        <dl>
+                            <dt>청구금액</dt>
+                            <dd>500,000 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>총금액</dt>
+                            <dd>500,000 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>수금액</dt>
+                            <dd>500,000 원</dd>
+                        </dl>  
+                        <dl>
+                            <dt>실제수금액</dt>
+                            <dd>500,000 원</dd>
+                        </dl>                              
+                    </div>
+                </div>
+            </div>
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+        <!-- 취소 -->
+        <div class="btn-footer">
+            <button class="footer-dark-blue">발급 접수</button>
+        </div>
+        <!-- 요청:가맹점장 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-gray">발급반려</button>
+            <button class="footer-dark-blue" disabled="">발급승인</button>
+        </div>
+        <!-- 요청:스탭 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-blue">발급 접수 취소</button>
+        </div>
+
+        <!-- 승인:가맹점장 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-gray">발급취소</button>
+            <button class="footer-dark-blue" disabled="">영수증 출력</button>
+        </div>
+        <!-- 승인:스탭 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-gray">발급  취소 요청</button>
+            <button class="footer-dark-blue" disabled="">영수증 출력</button>
+        </div>
+
+        <!-- 취소요청:가맹점장 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-gray">발급취소 반려</button>
+            <button class="footer-dark-blue" disabled="">발급취소 승인</button>
+        </div>
+        <!-- 취소요청:스탭 -->
+        <div class="btn-footer" style="display: none;">
+            <button class="footer-dark-blue">발급 취소 접수 취소</button>
+        </div>
+    </div>
+</body>
+</html>

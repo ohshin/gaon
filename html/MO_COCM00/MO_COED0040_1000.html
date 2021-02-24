@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>멀티캠퍼스 시청내역 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>멀티캠퍼스 시청내역</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="top-search-box">
+                    <div class="education-target-search multi-campus off">
+                        <dl>
+                            <dt>최종학습일자</dt>
+                            <dd>
+                                <p class="month-radio">
+                                    <span>                                                
+                                        <label>
+                                            <input type="radio" name="radio1" checked="">
+                                            <em>당일</em>
+                                        </label>											
+                                    </span>
+                                    <span>
+                                        <label>
+                                            <input type="radio" name="radio1">
+                                            <em>3개월</em>
+                                        </label>										
+                                    </span>
+                                    <span>
+                                        <label>
+                                            <input type="radio" name="radio1">
+                                            <em>6개월</em>
+                                        </label>										
+                                    </span>
+                                </p>
+                            </dd>
+                            <dd class="mgt10">
+                                <p class="month-input">
+                                    <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                    <span class="txt-mark">~</span>
+                                    <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                                </p>
+                            </dd>
+                        </dl>                        
+                        <dl>
+                            <dt>영업파트</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">가맹점1</button>
+                           </dd>
+                        </dl>                
+                        <dl>
+                            <dt>가맹점</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select" disabled>가맹점1</button>
+                           </dd>
+                        </dl>
+                        <dl>
+                            <dt>스탭</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">가맹점1</button>
+                           </dd>
+                        </dl>                
+                    </div> 
+                    <div>
+                        <button class="btn-more"><span>상세검색</span></button>
+                        <button class="top-dark-blue">조회</button>
+                    </div>           
+                </div>
+               
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                    <button class="search" onclick="layer_open('layer04'); return false;">검색</button>
+                </div>
+                <div class="content-wrap step">
+                    <!-- no-complet:미수료, no-app:신청 미확인, cancel-app:신청 취소, completion:수료 -->
+                    <div class="education-list">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="title">광주하남OD-홍길동</span>         
+                                </button>
+                                <span class="number"><em>6</em>건</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="title">광주하남OD-홍길동</span> 
+                                </button>
+                                <span class="number"><em>6</em>건</span>
+                            </li>  
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="title">광주하남OD-홍길동</span> 
+                                </button>
+                                <span class="number"><em>6</em>건</span>
+                            </li>  
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <span class="title">광주하남OD-홍길동</span> 
+                                </button>
+                                <span class="number"><em>6</em>건</span>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 등록된 글이 없습니다.  -->
+                    <div class="search-no-data">일치하는 시청내역이 없습니다.</div>
+                    <!-- 검색결과없을시 -->
+                    <div class="search-no-data">검색결과가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

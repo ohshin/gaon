@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+  <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+  <!-- MO_CLIO0030_1300(정렬 편집) 때문에 추가 -->
+  <script src="../../js/libs/jquery-ui.js"></script>
+  <!-- MO_CLIO0030_1300(정렬 편집) 때문에 추가 -->
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+    <script src="../../js/jquery.selectscroll.js"></script>
+
+    <style>
+        .btn-box .btn-detail {display: block; padding: 6px 0;font-size: 12px;margin: 10px 0;text-align: center;}
+        .btn-detail {text-align: left;border:0;color: #000;font-weight: normal;}
+    </style>
+</head>
+
+<body>
+  <a href="#" class="btn-detail" id="layer18" >MO_COED0020_1000(년월 선택)</a>
+
+    <script type="text/javascript">
+        // 使用
+        $(function () {
+            function init () {
+                $('#layer18').selectScroll({
+                    data: [
+                              [{
+                                text: '2014년', id: 1
+                              },{
+                                text: '2015년', id: 2
+                              },{
+                                text: '2016년', id: 3
+                              },{
+                                text: '2017년', id: 4
+                              },{
+                                text: '2018년', id: 5
+                              },{
+                                text: '2019년', id: 6
+                              }],[{
+                                text: '1월', id: 1
+                              },{
+                                text: '2월', id: 2
+                              },{
+                                text: '3월', id: 3
+                              },{
+                                text: '4월', id: 4
+                              },{
+                                text: '5월', id: 5
+                              },{
+                                text: '6월', id: 6
+                              },{
+                                text: '7월', id: 7
+                              },{
+                                text: '8월', id: 8
+                              },{
+                                text: '9월', id: 9
+                              },{
+                                text: '10월', id: 10
+                              },{
+                                text: '11월', id: 11
+                              },{
+                                text: '12월', id: 12
+                              }]
+                        ],
+                    selectedIndex: [0],
+                    cancel: function () {
+                        console.log('Canceld')
+                    }
+                })
+            }
+            var $doc = $(document)
+            $doc.on('click', '#layer18', init)
+        });
+    </script>
+</body>
+
+</html>

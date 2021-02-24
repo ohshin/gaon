@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>가맹점재고관리 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>가맹점재고관리</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="top-search-box">
+                    <!-- inventory: 본사용, inventory-member :가맹점용 -->
+                    <div class="education-target-search inventory off">
+                        <!-- 가맹점 권한시 삭제 -->
+                        <dl>
+                            <dt>가맹점</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">전체</button>
+                            </dd>
+                        </dl>
+                        <!-- 가맹점 권한시 삭제 -->
+                        <dl>
+                            <dt>재고일자</dt>
+                            <dd>
+                                <p class="month-input">
+                                    <input type="text" class="cal w100p" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>품목카테고리</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">전체</button>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>조정사유</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">전체</button>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>품목</dt>
+                            <dd><input type="text" class="type1 w100p" placeholder="품목명, 약어 또는 품목코드"></dd>
+                        </dl>
+                    </div> 
+                    <div>
+                        <button class="btn-more"><span>상세검색</span></button>
+                        <button class="top-dark-blue" disabled>조회</button>
+                    </div>           
+                </div>
+               
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                    <!-- <button class="sort-order">정렬편집</button> -->
+                </div>
+                <div class="content-wrap step">
+                    <div class="education-list pd12">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="area-name">아임리얼 아임유어레몬에이드270ml</span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="5">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3">고객주문수량</th>
+                                                <th rowspan="2">조정수량</th>
+                                                <th rowspan="2">집계수량</th>
+                                            </tr>
+                                            <tr>
+                                                <th>정상</th>
+                                                <th>온라인</th>
+                                                <th>증정</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </button>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="area-name">아임리얼 아임유어 레몬에이드 270ml</span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="2">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>조정재고</th>
+                                                <th>현재재고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </button>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="area-name">수도권(북부)</span>
+                                    <table class="tb-area mgt14 mglr8m">
+                                        <colgroup>
+                                            <col span="5">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3">고객주문수량</th>
+                                                <th rowspan="2">조정수량</th>
+                                                <th rowspan="2">집계수량</th>
+                                            </tr>
+                                            <tr>
+                                                <th>정상</th>
+                                                <th>온라인</th>
+                                                <th>증정</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                                <td>9,999</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </button>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 검색결과없을시 -->
+                    <div class="search-no-data">검색결과가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+
+        <div class="btn-footer">
+            <button class="footer-dark-blue">품목 추가</button>
+        </div>
+    </div>
+</body>
+</html>

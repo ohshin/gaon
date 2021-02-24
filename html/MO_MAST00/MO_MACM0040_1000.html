@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>고객주문확인 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객주문확인</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header> 
+           
+        
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="top-search-box">
+                    <div>
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select">선택해 주세요</button> 
+                    </div>
+                </div>         
+                <div class="order-box">
+                    <dl>
+                        <dt>고객확인 마감시간</dt>
+                        <dd class="right"><em>01:20:20</em>남음</dd>
+                    </dl>
+                </div>
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                    <button class="search">검색</button>
+                </div>
+                <div class="content-wrap step">
+                    <div class="customer-list order-confirm">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="company-name"><em class="search-txt">통합몰</em><em class="order">재주문</em></span>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="etc">
+                                        <em>배송시작 : 2020-01-01</em>
+                                        <em><strong>배송종료</strong> : 2020-01-01</em>
+                                    </span>
+                                </button>
+                                <span class="no sure">미확인</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="company-name"><em class="search-txt">통합몰</em><em class="order taste">시음</em></span>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="etc">
+                                        <em>배송시작 : 2020-01-01</em>
+                                        <em><strong>배송종료</strong> : 2020-01-01</em>
+                                    </span>
+                                </button>
+                                <span class="yes sure">
+                                    확인<em class="on">[확정]</em>
+                                </span>
+                            </li>  
+                            <!-- 수정불가 -->
+                            <li class="disabled">                                
+                                <button>
+                                    <span class="company-name"><em class="search-txt">통합몰</em><em class="order experience">체험단</em></span>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="etc">
+                                        <em>배송시작 : 2020-01-01</em>
+                                        <em><strong>배송종료</strong> : 2020-01-01</em>
+                                    </span>
+                                </button>
+                                <span class="no sure">미확인</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="company-name">통합몰 <em class="order experience">체험단</em></span>
+                                    <span class="name">홍길동</span>                                   
+                                    <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                    <span class="etc">
+                                        <em>배송시작 : 2020-01-01</em>
+                                        <em><strong>배송종료</strong> : 2020-01-01</em>
+                                    </span>
+                                </button>
+                                <span class="yes sure">
+                                    확인<em class="off">[미확정]</em>
+                                </span>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 가맹점을 선택해 주세요.  -->
+                    <div class="franchisee-choice">가맹점을 선택해 주세요.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

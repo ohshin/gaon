@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>고객배송내역</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객배송내역</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>      
+        
+        
+       
+        
+        <div class="content bg1" id="content">
+            
+            <div class="container">
+                <div class="top-menu index">
+                    <div class="tabs-menu hbox ">
+                        <button class="active">미배송(120)</button>
+                        <button>배송전체</button>
+                    </div>
+                </div>
+                <div class="content-wrap step pdt12">
+                    <div class="wrap_cons">
+                        <div class="cons animated05s fadeInUp">
+                            <div class="top-search">
+                                <span class="total">총 <em>999</em>건</span>
+                                <button class="search">검색</button>
+                            </div>
+                            <div class="customer-delivery-history">
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">
+                                                <em>오메가(1)</em>
+                                                <em>당근(2)</em>
+                                            </span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인</span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">오메가(1), 당근(2)</span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인<em class="adjust">(조정)</em></span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">오메가(1), 당근(2)</span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인<em class="adjust">(조정)</em></span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li>                                                 
+                                </ul>
+                            </div>
+                            <div class="no-data posi-r"  style="display: none;">담보내역이 없습니다.</div>
+                        </div>
+                        <div class="cons animated05s fadeInUp">
+                            <div class="top-search">
+                                <span class="total">총 <em>999</em>건</span>
+                                <button class="search">검색</button>
+                            </div>
+                            <div class="customer-delivery-history">
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">
+                                                <em>오메가(1)</em>
+                                                <em>당근(2)</em>
+                                            </span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인</span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">오메가(1), 당근(2)</span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인<em class="adjust">(조정)</em></span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="info">
+                                            <span class="name">홍길동</span>                                   
+                                            <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                                            <span class="prodecut">오메가(1), 당근(2)</span>
+                                            <span class="memo">배송메모가 표시됩니다. 한줄만 표시 길면 말줄임 배송메모가 표시됩니다. 한줄만 표시 길면 말줄임</span>
+                                        </div>
+                                        <span class="sure">미확인<em class="adjust">(조정)</em></span>
+                                        <div class="btn-delivery-box">
+                                            <button class="del-sure"><span>배송확정</span></button>
+                                            <button class="del-amount"><span>배송수량조정</span></button>
+                                        </div>
+                                    </li>                                                 
+                                </ul>
+                            </div>
+                            <div class="no-data posi-r"  style="display: none;">담보내역이 없습니다.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>           
+        </div>
+        
+    </div>
+</body>
+</html>

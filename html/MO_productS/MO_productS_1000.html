@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>맞춤제품 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>맞춤제품</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>  
+        
+          
+        
+        
+        <div class="content custom-products" id="content">
+            <div class="top-search-box bdb0">
+                <div class="title-top-select">성별/연령대를 선택해주세요.</div>
+                <div class="title-description">중복선택가능</div>
+                <div class="order-bhox gender line-top">
+                    <div class="order-check male">
+                        <label><input type="checkbox" checked><em>남성</em></label>
+                    </div>
+                    <div class="order-check female">
+                        <label><input type="checkbox"><em>여성</em></label>
+                    </div>
+                    <div class="order-check child">
+                        <label><input type="checkbox"><em>어린이</em></label>
+                    </div>
+                </div>
+
+                <div class="title-top-select">음용목적을 선택해 주세요.</div>
+                <div class="title-description">(중복선택가능)</div>
+                <div class="order-bhox line-top">
+                    <div class="order-check">
+                        <label><input type="checkbox" checked><em>채소 섭취</em></label>
+                    </div>
+                    <div class="order-check">
+                        <label><input type="checkbox"><em>식사 대용</em></label>
+                    </div>
+                    <div class="order-check">
+                        <label><input type="checkbox"><em>건강 개선</em></label>
+                    </div>
+                </div>
+
+                <div class="title-top-select">관심정보를 선택해주세요.</div>
+                <div class="title-description">(중복선택가능)</div>
+                <div class="line-top">
+                    <div class="order-bhox">
+                        <div class="order-check">
+                            <label><input type="checkbox" checked><em>영양소 섭취</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>위 건강</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>간 건강</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>장 건강</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>눈 건강</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>혈관 건강</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>체지방 관리</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>갱년기 건강</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>항산화</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>어린이 성장</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>면역 강화</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>기타</em></label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-top-select"><span>관능(맛)을 선택해주세요.</span></button>
+                <div class="title-description">(단건선택)</div>
+                <div class="line-top">
+                    <div class="order-bhox">
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste" checked><em>입에 쓴<br>(5Brix 미만)</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste"><em>달지 않은<br>(5~10Brix)</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste"><em>맛있는<br>(10Brix 초과)</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste"><em>기타</em></label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-top-select"><span>기능성분을 선택해주세요.</span></button>
+                <div class="title-description">(중복선택가능)</div>
+                <div class="line-top">
+                    <div class="order-bhox">
+                        <div class="order-check">
+                            <label><input type="checkbox" checked><em>폴리페놀</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>루테인</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>콜라겐</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>단백질</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>오메가3</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>비타민U</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>비타민C</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>비타민D</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>비타민E</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>이소플라본</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>프로<br>바이오틱스</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>칼슘</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>칼륨</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>베타카로틴</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>카테킨</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>공액<br>리놀렌산</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>사포닌</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>기타</em></label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-top-select"><span>음용카테고리를 선택해 주세요.</span></button>
+                <div class="title-description">(단건선택)</div>
+                <div class="line-top">
+                    <div class="order-bhox">
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2" checked><em>녹즙</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>식물성<br>유산균</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>발효유</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>로하스밀</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>건강즙</em></label>
+                        </div>
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>건강편의식</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-radio">
+                            <label><input type="radio" name="taste2"><em>건강기능식품</em></label>
+                        </div>
+                        <div class="order-radio"></div> <!-- 비워 두세요 -->
+                        <div class="order-radio"></div> <!-- 비워 두세요 -->
+                    </div>
+                </div>
+
+                <button class="btn-top-select"><span>원재료를 선택해주세요.</span></button>
+                <div class="title-description">(중복선택가능)</div>
+                <div class="line-top">
+                    <div class="order-bhox">
+                        <div class="order-check">
+                            <label><input type="checkbox" checked><em>명일엽</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>케일</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>양배추</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>브로콜리</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>돌미나리</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>당근</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>베리류</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>석류</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>홍삼</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>노니</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>헛개</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>녹용</em></label>
+                        </div>
+                    </div>
+                    <div class="order-bhox mgt10">                        
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>계란</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>유산균</em></label>
+                        </div>
+                        <div class="order-check">
+                            <label><input type="checkbox"><em>기타</em></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-find-order">
+                    <button class="footer-dark-blue">맞춤제품 찾기</button>
+                </div>
+                
+            </div>
+            
+           
+           
+
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+        
+    </div>
+</body>
+</html>

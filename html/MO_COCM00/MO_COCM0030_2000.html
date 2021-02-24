@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>통합승인관리 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>통합승인관리</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="inte-approval-detail">
+                        <div class="title">
+                            <em class="activation">경조비승인</em>
+                            <p class="tit">김길동 스텝 상조회 가입승인요청</p>
+                        </div>
+                        <div class="setp-information-list">
+                            <h4>기본정보</h4>
+                            <div class="setp-list">
+                                <dl>
+                                    <dt>업무구분</dt>
+                                    <dd>단기운영관리.증정/행사프로모션등록(프로모션관리)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>요청내용</dt>
+                                    <dd>김길동 스텝 상조회 가입승인요청</dd>
+                                </dl>
+                                <dl>
+                                    <dt>요청일시</dt>
+                                    <dd>2020-12-01 16:01:01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>요청자</dt>
+                                    <dd>고길동</dd>
+                                </dl>                                
+                            </div>
+                            <h4>승인 정보</h4>
+                            <div class="setp-list">
+                                <dl>
+                                    <dt>승인상태</dt>
+                                    <dd>
+                                        <em class="approval-request">승인요청</em>
+                                        <em class="approval-return">반려</em>
+                                        <em class="approval-completion">승인완료</em>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>승인자</dt>
+                                    <dd>고길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>승인일시</dt>
+                                    <dd>2020-12-25</dd>
+                                </dl>  
+                                <dl>
+                                    <dt>반려사유</dt>
+                                    <dd>반려사유가 표시됩니다. 반려사유는 여러줄이 될 수 있습니다.</dd>
+                                </dl>                              
+                            </div>
+                            <p class="mg-txt">※ 상세정보 확인 후 승인/반려가 가능합니다.</p>
+                            <div>
+                                <button class="btn-request-confirmation">요청 상세정보  확인</button>
+                                <button class="btn-request-confirmation on">요청 상세정보  확인</button>
+                                <button class="btn-request-confirmation off">상세정보</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+        <div class="btn-footer">
+            <button class="footer-dark-gray wp40">반려</button>
+            <button class="footer-dark-blue wp60">승인</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>변동 보류 등록 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>변동 보류 등록</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>  
+        
+          
+        
+        
+        <div class="content bg1" id="content">
+            <div class="top-search-box">
+                <div class="select-box">
+                    <dl>
+                        <dt>변동 보류 기간</dt>
+                        <dd class="month-input">
+                            <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                            <span class="txt-mark">~</span>
+                            <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                        </dd>	
+                    </dl>
+                    <dl>
+                        <dt>변동 보류사유</dt>
+                        <dd>
+                            <!-- 선택시 class active 추가  -->
+                            <button class="btn-select">전체</button> 
+                        </dd>
+                        <dd class="mgt10"><input type="text" class="type1 w100p"  placeholder="기타사유를 입력해 주세요."></dd>
+                    </dl>
+                </div>
+            </div>            
+            <div class="container">
+                <div class="content-wrap step">
+                    <div class="order check-box">
+                        <label><input type="checkbox" class="checkbox3" checked><span>전체</span></label>
+                    </div>
+                    <div class="customer-list">
+                        <ul class="order-list">
+                            <li>
+                                <label><input type="checkbox" class="checkbox3" checked><span>명일녹즙</span></label>
+                                <div class="variable-pending">
+                                    <span>수량(증정) : 2(1)</span>
+                                    <span>약정 : Y</span>
+                                    <span>획득경로 : <em>가맹점</em></span>                                   
+                                </div>                                
+                            </li> 
+                            <li>
+                                <label><input type="checkbox" class="checkbox3"><span>명일녹즙</span></label>
+                                <div class="variable-pending">
+                                    <span>수량(증정) : 2(1)</span>
+                                    <span>약정 : Y</span>
+                                    <span>획득경로 : <em class="red">통합몰</em></span>                                   
+                                </div>                                
+                            </li> 
+                            <li>
+                                <label><input type="checkbox" class="checkbox3"><span>명일녹즙</span></label>
+                                <div class="variable-pending">
+                                    <span>수량(증정) : 2(1)</span>
+                                    <span>약정 : Y</span>
+                                    <span>획득경로 : <em class="red">통합몰</em></span>                                   
+                                </div>                                
+                            </li>
+                            <li>
+                                <label><input type="checkbox" class="checkbox3"><span>명일녹즙</span></label>
+                                <div class="variable-pending">
+                                    <span>수량(증정) : 2(1)</span>
+                                    <span>약정 : Y</span>
+                                    <span>획득경로 : <em class="red">통합몰</em></span>                                   
+                                </div>                                
+                            </li>                           
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+        <div class="btn-footer">
+            <button class="footer-dark-gray wp40">취소</button>
+            <button class="footer-dark-blue wp60">보류 등록</button>
+        </div>
+    </div>
+</body>
+</html>

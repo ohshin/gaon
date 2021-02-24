@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>아이디/비밀번호 찾기 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>아이디/비밀번호 찾기</h1>
+            <button class="prev" onclick="history.back()"></button>           
+        </header>
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="tit-box">아이디 확인 및 <br>새롭게 사용할 비밀번호를 설정해주세요.
+                        </div>
+                    <div class="content-list password">
+                        <dl>
+                            <dt>아이디 확인</dt>
+                            <dd><input type="text" class="type1 w100p" value="단일 ID" placeholder="사용중인 비밀번호를 입력해주세요."></dd>
+                            <dd>
+                                 <!-- 선택시 class active 추가  -->
+                                 <button class="btn-select">다중 ID(단일 다중 둘중에 하나만 나옴)</button>
+                                 <div class="select-box">
+                                    <select class="custom-select w100p">
+                                        <option selected="">전체 문서</option>
+                                        <option>기안 문서</option>
+                                        <option>접수 문서</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <h3 class="tit-line">새 비밀번호</h3>
+                        <dl>
+                            <dt>새 비밀번호 입력</dt>
+                            <dd><input type="password" class="type1 w100p" placeholder="새롭게 사용할 비밀번호를 입력해주세요."></dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호 확인</dt>
+                            <dd><input type="password" class="type1 w100p" placeholder="입력한 비밀번호를 재 입력해주세요."></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-footer">
+            <button class="btn-ok">비밀번호 변경</button>
+        </div>
+    </div>
+
+</body>
+</html>

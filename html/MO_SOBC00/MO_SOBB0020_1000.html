@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>고객사거래내역조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객사거래내역조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="top-search-box">
+                    <!-- head-quarters 본사, affiliat 가맹점 -->
+                    <div class="education-target-search">
+                        <dl>
+                            <dt>거래처</dt>
+                            <dd>
+                               <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">전체</button>
+                            </dd>
+                        </dl>
+                        <!-- 본사용 -->
+                        <dl>
+                            <dt>사업장</dt>
+                            <dd>
+                               <!-- 선택시 class active 추가  -->
+                                <button class="btn-select" disabled>전체</button>
+                            </dd>
+                        </dl>
+                        <!-- 본사용 -->
+                        <dl>
+                            <dt>입고일자</dt>
+                            <dd class="mgt10">
+                                <p class="month-radio">
+                                    <span>                                                
+                                        <label>
+                                            <input type="radio" name="radio1" checked="">
+                                            <em>1개월</em>
+                                        </label>											
+                                    </span>
+                                    <span>
+                                        <label>
+                                            <input type="radio" name="radio1">
+                                            <em>3개월</em>
+                                        </label>										
+                                    </span>
+                                    <span>
+                                        <label>
+                                            <input type="radio" name="radio1">
+                                            <em>6개월</em>
+                                        </label>										
+                                    </span>
+                                </p>
+                            </dd>
+                            <dd class="mgt10">
+                                <p class="month-input">
+                                    <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                    <span class="txt-mark">~</span>
+                                    <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>정렬순서</dt>
+                            <dd class="mgt10">
+                                <p class="month-radio">
+                                    <span>                                                
+                                        <label>
+                                            <input type="radio" name="Sort" checked="">
+                                            <em>과거순</em>
+                                        </label>											
+                                    </span>
+                                    <span>
+                                        <label>
+                                            <input type="radio" name="Sort">
+                                            <em>최신순</em>
+                                        </label>										
+                                    </span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div> 
+                    <div class="mgt20">
+                        <button class="top-dark-blue" disabled>조회</button>
+                    </div>                           
+                </div>
+                
+               
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                    <span class="vat">(VAT별도)</span>
+                </div>
+                
+                <div class="content-wrap step">
+                    <div class="customer-list">
+                        <ul class="order-list out-order">
+                            <li>
+                                <div class="detail">
+                                    <span class="area-order-amount">수서오피스 가맹점</span>
+                                    <span class="date2">2020-01-01</span>
+                                </div>  
+                                <div class="order-amount bdt0">
+                                    <dl>
+                                        <dt>총 품목</dt>
+                                        <dd>32 건</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 확정수량</dt>
+                                        <dd>2,122 건</dd>
+                                    </dl>
+                                </div>                              
+                                <div class="total-order-amount">
+                                    <span class="left">합계금액
+                                        <em class="vat2">(VAT별도)</em>
+                                    </span> 
+                                    <em>35,000</em>원
+                                </div>
+                            </li>
+                            <li>
+                                <div class="detail">
+                                    <span class="area-order-amount">수서오피스 가맹점</span>
+                                    <span class="date2">2020-01-01</span>
+                                </div>  
+                                <div class="order-amount bdt0">
+                                    <dl>
+                                        <dt>총 품목</dt>
+                                        <dd>32 건</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 확정수량</dt>
+                                        <dd>2,122 건</dd>
+                                    </dl>
+                                </div>                              
+                                <div class="total-order-amount">
+                                    <span class="left">합계금액
+                                        <em class="vat2">(VAT별도)</em>
+                                    </span> 
+                                    <em>35,000</em>원
+                                </div>
+                            </li>                                                     
+                        </ul>
+                    </div>
+                    <!-- 검색결과없을시 -->
+                    <div class="search-no-data">조회결과가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

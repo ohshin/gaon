@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>세일즈매니저활동및근태등록 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="f16">세일즈매니저활동및근태등록</h1>
+            <button class="prev"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>  
+        
+          
+        
+        
+        <div class="content" id="content">            
+            
+            <div class="container"> 
+                <div class="content-wrap">   
+                    <h3 class="big-title3 mgt10 pdb0">세일즈매니저 정보</h3>
+                    <div class="customer-target">
+                        <dl>
+                            <dt>구분</dt>
+                            <dd class="month-radio">
+                                <span>                                                
+                                    <label>
+                                        <input type="radio" name="sales-info" data-in="sales" checked>
+                                        <em>세일즈메니저</em>
+                                    </label>											
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="sales-info" data-in="bpo">
+                                        <em>BPO</em>
+                                    </label>										
+                                </span>
+                            </dd>
+                        </dl>
+                        <dl id="sales" class="sales-info sales">
+                            <dt>세일즈메니저 선택</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">선택해 주세요</button> 
+                            </dd>
+                        </dl>
+                        <dl id="bpo" class="sales-info">
+                            <dt>BPO 선택</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">선택해 주세요</button> 
+                            </dd>
+                        </dl>
+                    </div>
+                    <h3 class="big-title3 bdt0 pdb0">판촉정보</h3>
+                    <div class="customer-target">
+                        <dl>
+                            <dt>판촉일자</dt>
+                            <dd>
+                                <p class="month-input">
+                                    <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                    <span class="txt-mark">~</span>
+                                    <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                                </p>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>가맹점</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">선택해 주세요</button> 
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>판촉행사구분</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">선택해 주세요</button> 
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>판촉행사명</dt>
+                            <dd>
+                                <!-- 선택시 class active 추가  -->
+                                <button class="btn-select">선택해 주세요</button> 
+                            </dd>
+                        </dl>                      
+                        
+                        <dl>
+                            <dt>기타(선택)</dt>
+                            <dd><input type="text" class="type1 w100p" placeholder="입력해 주세요."></dd>
+                        </dl>                           
+                    </div>                  
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+        <div class="btn-footer">
+            <button class="footer-dark-gray wp40">취소</button>
+            <button class="footer-dark-blue wp60" disabled>등록</button>
+        </div>
+    </div>
+</body>
+</html>

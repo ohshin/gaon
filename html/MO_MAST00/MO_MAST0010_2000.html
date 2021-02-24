@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>스텝정보</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+       
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="step-info">
+                    <p class="img"><img src="../../img/tc-photo.jpg" alt=""></p><!-- 기본 이미지 img-user.png -->
+                    <p class="info-name">
+                        <span class="step-id">모닝스텝</span>
+                        <span class="name">홍길동-123456789</span>
+                    </p>                        
+                </div>
+                
+                <div class="top-menu">
+                    <div class="tabs-menu">
+                        <button class="active">기본</button>
+                        <button>고객&매출</button>
+                        <button>수수료조회</button>
+                        <button>상조회/적립금</button>
+                        <button>교육과정</button>
+                        <button>학습커뮤니티</button>
+                    </div>
+                </div>
+                <div class="wrap_cons">
+                    <div class="cons animated05s fadeInUp">
+                        <div class="setp-information-list">
+                            <h4>기본정보</h4>
+                            <div class="setp-list">                               
+                                <dl>
+                                    <dt>스텝명</dt>
+                                    <dd>홍길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>가상스텝여부</dt>
+                                    <dd>가상스텝 or 가상스텝아님</dd>
+                                </dl>
+                                <dl>
+                                    <dt>스텝구분</dt>
+                                    <dd>모닝스텝</dd>
+                                </dl>
+                                <dl>
+                                    <dt>생년월일</dt>
+                                    <dd>2000-01-01 (만 30세)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <span>12345</span>
+                                        경기도 용인시 수지고 포은대 추가주소 표시
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>휴대전화번호</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>02-0000-0000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>기념일</dt>
+                                    <dd>생일-2000-01-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용자ID</dt>
+                                    <dd>사용자ID</dd>
+                                </dl>
+                            </div>
+                            <h4>추가정보</h4>
+                            <div class="setp-list">
+                                <dl>
+                                    <dt>배달(배송)장소</dt>
+                                    <dd>입력내역 표시</dd>
+                                </dl>
+                                <dl>
+                                    <dt>구인경로</dt>
+                                    <dd>온라인광고(맘카페)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>추천인</dt>
+                                    <dd>AG01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배송도구</dt>
+                                    <dd>자전거</dd>
+                                </dl>
+                                <dl>
+                                    <dt>레벨</dt>
+                                    <dd>팀장</dd>
+                                </dl>
+                                
+                                <dl>
+                                    <dt>활동시작일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>활동종료일</dt>
+                                    <dd>2020-02-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>4대보험가입여부</dt>
+                                    <dd>없음 or 국민연금, 건강보험, 고용보험, 산재보험</dd>
+                                </dl>
+                            </div>
+                            <h4>계약서</h4>
+                            <div class="setp-list">
+                                <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                <p class="btn-list">
+                                    <span class="del">
+                                        <button class="attach-del">삭제</button>
+                                        <button><span>붙임1.첨부파일 명은 1줄만 노출합니다노출합니다.pdf</span></button>
+                                    </span>
+                                    <span class="del">
+                                        <button class="attach-del">삭제</button>
+                                        <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                    </span>
+                                </p>
+                                <!-- 첨부파일만 있는 경우 -->
+                                <p class="btn-list">
+                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                    <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                                </p>
+                                <button class="btn-attachment mgt20">파일첨부</button>
+                            </div>
+                            <h4>활동이력</h4>
+                            <div class="cal-tbl pd0 pdb20">
+                                <table>
+                                    <colgroup>
+                                        <col />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>활동시작일</th>
+                                            <th>활동종료일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-01-01</td>
+                                            <td>2020-02-01</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="no-data" style="display: none;">활동이력이 없습니다.</div>
+                        </div>
+                    </div>
+                    <div class="cons animated05s fadeInUp">
+                        <div class="setp-information-list">
+                            <div class="month-input mgt20">
+                                <!-- <input type="text" class="cal w100p" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01"> -->
+                                <button class="btn-month-input w100p">2020.12.01</button>
+                            </div>
+                            <h4 class="posi-r pdb20">매출현황<button class="info-change-arrow2">고객별매출현황</button></h4>
+                            <div class="setp-list">                               
+                                <dl>
+                                    <dt>매출액</dt>
+                                    <dd class="right">123,123,000 원</dd>
+                                </dl>                                
+                            </div>
+                            <h4>고객현황</h4>
+                            <div class="setp-list">
+                                <dl>
+                                    <dt>고객</dt>
+                                    <dd>124명 (신규 25/ 중지 13)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>미수 고객</dt>
+                                    <dd>6명  (총 미수금 : 215,000 원)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>선불 고객</dt>
+                                    <dd>10명</dd>
+                                </dl>
+                                <dl>
+                                    <dt>후불 고객</dt>
+                                    <dd>10명</dd>
+                                </dl>
+                                <dl>
+                                    <dt>결제방식</dt>
+                                    <dd>
+                                        <em>정기결제 84명</em>
+                                        <em>직잡수금 40명</em>
+                                    </dd>
+                                </dl>
+                                
+                                <dl>
+                                    <dt>고객생산성</dt>
+                                    <dd>
+                                        <em>44명</em>
+                                        <em>(주간 3개 이하)</em>
+                                    </dd>
+                                </dl>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons animated05s fadeInUp">
+                        <div class="setp-information-list">
+                            <div class="month-input mgt20">
+                                <input type="text" class="cal w100p" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                            </div>
+                            <div>
+                                <h3 class="btitle">지급내역 요약</h3>
+                                <h3 class="big-title3">활동수수료내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>판매수수료</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>지원총액</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>공제총액</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>정산계</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                              
+                                </div>
+                                <h3 class="big-title3">지급액</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>지급총액</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>소득세</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>지방소득세</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                              
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>실지급액</span> 
+                                    <em>12,500</em>원
+                                </div>
+                                <h3 class="btitle">상세내역</h3>
+                                <h3 class="big-title3">매출내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>일배</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>기프트세트</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>DM위탁배송</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                              
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">수금대상</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>일배</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>기프트세트</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>전월미수</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                              
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">입금내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>CMS</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>카드자동이체</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>직접납부</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>기타</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                             
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">미수내역</h3>                                
+                                <div class="total-order-amount">
+                                    <span>미수 총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">판매수수료 내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>일배</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>기프트세트</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>DM위탁배송</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                              
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">지원내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>매출인센티브</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>추가배송수수료</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>프로모션</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>  
+                                    <dl>
+                                        <dt>스텝정착수수료</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>스텝음용</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>직급자수수료</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>기타수수료</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                             
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                                <h3 class="big-title3">공제내역</h3>
+                                <div class="order-detail-info-list bdb0 rgt">
+                                    <dl>
+                                        <dt>상조금</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>적립금</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>활동금</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>  
+                                    <dl>
+                                        <dt>기타공제</dt>
+                                        <dd>1,000,000 원</dd>
+                                    </dl>                                                                
+                                </div>
+                                <div class="total-order-amount">
+                                    <span>총합</span> 
+                                    <em>12,500</em>원
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cons animated05s fadeInUp bg1">
+                        <div class="data-list pdt12 posi-r">
+                            <div class="member-list aid">
+                                <p class="member">
+                                    <span class="name">상조회 내역</span>
+                                    <button class="btn-premature">상조회 관리 이동</button>
+                                </p>
+                                <dl>
+                                    <dt>가입상태</dt>
+                                    <dd>대기</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적용시작일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>종료일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>                                                               
+                            </div>
+                            <div class="member-list aid">
+                                <p class="member">
+                                    <span class="name">적립금 내역</span>
+                                    <button class="btn-premature">적립금 관리</button>
+                                </p>
+                                <dl>
+                                    <dt>가입상태</dt>
+                                    <dd>해지</dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청상태</dt>
+                                    <dd>승인완료</dd>
+                                </dl>
+                                <dl>
+                                    <dt>불입횟수</dt>
+                                    <dd class="red">총 36회 중 13회 불입</dd>
+                                </dl>
+                                <dl>
+                                    <dt>불입금액</dt>
+                                    <dd>
+                                        <em>500,000원</em>
+                                        <em>(본인 : 200,000원)</em>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청가맹점</dt>
+                                    <dd>수서오피스</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>가입일자</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>해지일자</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>                                
+                            </div>
+                            <h3 class="big-title3 bdt0">교육과정</h3>
+                            <div class="member-list aid">
+                                <p class="member">
+                                    <span class="name">모닝스탭 입문과정</span>
+                                </p>
+                                <dl>
+                                    <dt>기준년월</dt>
+                                    <dd>2020-08</dd>
+                                </dl>
+                                <dl>
+                                    <dt>수료여부</dt>
+                                    <dd>미수료</dd>
+                                </dl>                              
+                            </div>
+                            <div class="member-list aid">
+                                <p class="member">
+                                    <span class="name">모닝스탭 심화과정</span>
+                                </p>
+                                <dl>
+                                    <dt>기준년월</dt>
+                                    <dd>2020-08</dd>
+                                </dl>
+                                <dl>
+                                    <dt>수료여부</dt>
+                                    <dd>미수료</dd>
+                                </dl>                              
+                            </div>
+                        </div>
+                        <div class="no-data posi-r"  style="display: none;">등록된 상조회/적립금이 없습니다.</div>
+                    </div>
+                    <div class="cons animated05s fadeInUp bg1">
+                        <div class="data-list pdt12 posi-r">
+                            <div class="member-list">
+                                <p class="member">
+                                    <span class="name">모닝스탭 입문과정</span>
+                                </p>
+                                <dl>
+                                    <dt>기준년월</dt>
+                                    <dd>2020-08</dd>
+                                </dl>
+                                <dl>
+                                    <dt>기수</dt>
+                                    <dd>1 기</dd>
+                                </dl>
+                                <dl>
+                                    <dt>그룹</dt>
+                                    <dd>수도권-신촌</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>수료여부</dt>
+                                    <dd>미수료</dd>
+                                </dl>                                                               
+                            </div>
+                            <div class="member-list">
+                                <p class="member">
+                                    <span class="name">모닝스탭 심화과정</span>
+                                </p>
+                                <dl>
+                                    <dt>기준년월</dt>
+                                    <dd>2020-08</dd>
+                                </dl>
+                                <dl>
+                                    <dt>기수</dt>
+                                    <dd>1 기</dd>
+                                </dl>
+                                <dl>
+                                    <dt>그룹</dt>
+                                    <dd>수도권-신촌</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>수료여부</dt>
+                                    <dd>미수료</dd>
+                                </dl>                                                               
+                            </div>
+                        </div>
+                        <div class="no-data posi-r"  style="display: none;">수강 내역이 없습니다.</div>
+                    </div>
+                    <div class="cons animated05s fadeInUp bg1">
+                        <div class="data-list pdt12 posi-r">
+                            <div class="member-list">
+                                <p class="member">
+                                    <span class="name">8강_신규개척 우수사례 (판교오피스 / 통영오피스)</span>
+                                </p>
+                                <dl>
+                                    <dt>주차</dt>
+                                    <dd>45 주차</dd>
+                                </dl>
+                                <dl>
+                                    <dt>진도율</dt>
+                                    <dd>20%</dd>
+                                </dl>
+                                <dl>
+                                    <dt>최종합습일시</dt>
+                                    <dd>2020-10-26 09:34:34</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>완료여부</dt>
+                                    <dd>완료</dd>
+                                </dl>                                                               
+                            </div>
+                            <div class="member-list">
+                                <p class="member">
+                                    <span class="name">여성건강 차세대 대표주자 [리우먼]</span>
+                                </p>
+                                <dl>
+                                    <dt>주차</dt>
+                                    <dd>45 주차</dd>
+                                </dl>
+                                <dl>
+                                    <dt>진도율</dt>
+                                    <dd>20%</dd>
+                                </dl>
+                                <dl>
+                                    <dt>최종합습일시</dt>
+                                    <dd>2020-10-26 09:34:34</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>완료여부</dt>
+                                    <dd>완료</dd>
+                                </dl>                                                               
+                            </div>
+                            <div class="member-list">
+                                <p class="member">
+                                    <span class="name">하절기 신선관리 캠페인</span>
+                                </p>
+                                <dl>
+                                    <dt>주차</dt>
+                                    <dd>45 주차</dd>
+                                </dl>
+                                <dl>
+                                    <dt>진도율</dt>
+                                    <dd>20%</dd>
+                                </dl>
+                                <dl>
+                                    <dt>최종합습일시</dt>
+                                    <dd>2020-10-26 09:34:34</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>완료여부</dt>
+                                    <dd>완료</dd>
+                                </dl>                                                               
+                            </div>
+                        </div>
+                        <div class="no-data posi-r"  style="display: none;">수강 내역이 없습니다.</div>
+                    </div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>           
+        </div>
+    </div>
+</body>
+</html>

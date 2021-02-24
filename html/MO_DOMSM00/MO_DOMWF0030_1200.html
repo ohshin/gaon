@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>경조비신청관리 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>경조비신청관리</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content" id="content">
+            <div class="customer-detail head">
+                <div class="title top bdb0 detail">
+                    <span class="company-name">[가상] 사무실 | 1</span>
+                    <span class="name">위로금-시모상</span>   
+                    <span class="etc">
+                        <em>고길동</em>
+                        <em>2020-12-01</em>
+                    </span>                                
+                    <span class="event-unpaid drinking">승인<em>(미지급)</em></span>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="content-wrap">
+                    <h4 class="big-title3">승인정보</h4>
+                    <div class="order-detail-info-list bdb0 rgt">
+                        <dl>
+                            <dt>승인상태</dt>
+                            <dd>저장</dd>
+                        </dl> 
+                        <!-- 반려  -->
+                        <dl>
+                            <dt>반려사유</dt>
+                            <dd>반려사유가 표기됩니다. 두줄까지도 표기됩니다. 계속 개행됩니다</dd>
+                        </dl>  
+                        <!-- 승인 - 지급, 미지급 -->
+                        <dl>
+                            <dt>지급구분</dt>
+                            <dd>미지급</dd>
+                        </dl>
+                         <!-- 승인 - 지급 -->
+                        <dl>
+                            <dt>지급일자</dt>
+                            <dd>2020-01-01</dd>
+                        </dl>                                             
+                    </div>
+                    <h4 class="big-title3">기본정보</h4>
+                    <div class="order-detail-info-list bdb0 rgt">
+                        <dl>
+                            <dt>가맹점명</dt>
+                            <dd>광주하남OD</dd>
+                        </dl>
+                        <dl>
+                            <dt>가입자명</dt>
+                            <dd>고길동</dd>
+                        </dl>
+                        <dl>
+                            <dt>스탭코드</dt>
+                            <dd>1234567890</dd>
+                        </dl> 
+                        <dl>
+                            <dt>스탭구분</dt>
+                            <dd>모닝스텝</dd>
+                        </dl> 
+                        <dl>
+                            <dt>가입년월</dt>
+                            <dd>2020-01</dd>
+                        </dl>                        
+                    </div>
+                    <h4 class="big-title3">경조신청정보</h4>
+                    <div class="order-detail-info-list bdb0 rgt">
+                        <dl>
+                            <dt>경조발생일자</dt>
+                            <dd>2020-01-01</dd>
+                        </dl>
+                        <dl>
+                            <dt>신청구분</dt>
+                            <dd>위로금</dd>
+                        </dl>
+                        <dl>
+                            <dt>신청유형</dt>
+                            <dd>시모상</dd>
+                        </dl> 
+                        <dl>
+                            <dt>경조대상명</dt>
+                            <dd>김길동</dd>
+                        </dl> 
+                        <dl>
+                            <dt>금액</dt>
+                            <dd>1,000원</dd>
+                        </dl>  
+                        <dl>
+                            <dt>본인부담금</dt>
+                            <dd>1,000원</dd>
+                        </dl>
+                        <dl>
+                            <dt>비고</dt>
+                            <dd>-</dd>
+                        </dl>                      
+                    </div>
+                    <h4 class="big-title3">경조비 수령계좌</h4>
+                    <div class="order-detail-info-list bdb0 rgt">
+                        <dl>
+                            <dt>은행</dt>
+                            <dd>농협</dd>
+                        </dl>
+                        <dl>
+                            <dt>예금주</dt>
+                            <dd>고길동</dd>
+                        </dl>
+                        <dl>
+                            <dt>계좌번호</dt>
+                            <dd>123-12-123456</dd>
+                        </dl>                   
+                    </div>
+                    <h4 class="big-title3">증빙자료</h4>
+                    <div class="setp-list">
+                        <!-- 첨부파일만 있는 경우 -->
+                        <p class="btn-list">
+                            <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                            <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                        </p>
+                    </div>
+                    <div class="mgt20">
+                        <button class="btn-request-confirmation on">신청 삭제</button>
+                    </div>
+                </div>
+            </div> 
+                         
+        </div>
+        <div class="btn-footer">
+            <!-- 저장 -->
+            <button class="footer-dark-gray wp45">수정</button>
+            <button class="footer-dark-blue wp55">승인 요청</button>
+            <!-- 승인요청 -->
+            <button class="footer-dark-blue">요청 취소</button>
+
+        </div>
+    </div>
+    <button class="btn-floating-top" id="top">TOP</button> 
+</body>
+</html>

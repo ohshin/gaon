@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* 칼라값 설정 */
+.green .main-quick-menu ul li button {background-color: #8dc035;}
+.green .main-quick-menu ul li button.btn-customer,
+.green .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.green .profile-wrap.mypage .info {background-color: #8dc035;}
+
+
+.green .btn-agree {background: #8dc035 url(../img/btn-icon-agree.png) no-repeat 90% center;background-size: 2.4rem;}
+.green .btn-send {background: #8dc035;}
+.green .btn-ok {background-color: #8dc035;}
+.green .search-side {background-color: #8dc035;}
+.green .btn-color-change {background: #8dc035 url(../img/btn-color.png) no-repeat 95% center;background-size: 2.4rem;}
+.green .btn-reset {background:#8dc035 url(../img/btn-icon-reset.png) no-repeat 95% center;background-size: 2.4rem;}
+
+
+
+
+.orange .main-quick-menu ul li button {background-color: #ffb800;}
+.orange .main-quick-menu ul li button.btn-customer,
+.orange .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.orange .profile-wrap.mypage .info {background-color: #ff9700;}
+
+.orange .popup-layer .main-quick-menu .btn-delivery.type1,
+.orange .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.orange .popup-layer .main-quick-menu .btn-delivery.type2 {display: block;}
+
+
+.pink .main-quick-menu ul li button {background-color: #e970ad;}
+.pink .main-quick-menu ul li button.btn-customer,
+.pink .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.pink .profile-wrap.mypage .info {background-color: #e970ad;}
+
+.pink .popup-layer .main-quick-menu .btn-delivery.type1,
+.pink .popup-layer .main-quick-menu .btn-delivery.type2 { display: none;}
+.pink .popup-layer .main-quick-menu .btn-delivery.type3 {display: block;}
+
+.soft-green .main-quick-menu ul li button {background-color: #2dc08a;}
+.soft-green .main-quick-menu ul li button.btn-customer,
+.soft-green .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.soft-green .profile-wrap.mypage .info {background-color: #2dc08a;}
+
+.soft-green .popup-layer .main-quick-menu .btn-delivery.type2,
+.soft-green .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.soft-green .popup-layer .main-quick-menu .btn-delivery.type1 {display: block;}
+
+
+
+.purple .main-quick-menu ul li button {background-color: #8354b0;}
+.purple .main-quick-menu ul li button.btn-customer,
+.purple .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.purple .profile-wrap.mypage .info {background-color: #8354b0;}
+
+.purple .popup-layer .main-quick-menu .btn-delivery.type1,
+.purple .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.purple .popup-layer .main-quick-menu .btn-delivery.type2 {display: block;}
+
+.dark-red .main-quick-menu ul li button {background-color: #dd5a7a;}
+.dark-red .main-quick-menu ul li button.btn-customer,
+.dark-red .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.dark-red .profile-wrap.mypage .info {background-color: #dd5a7a;}
+
+.dark-red .popup-layer .main-quick-menu .btn-delivery.type1,
+.dark-red .popup-layer .main-quick-menu .btn-delivery.type2 { display: none;}
+.dark-red .popup-layer .main-quick-menu .btn-delivery.type3 {display: block;}
+
+
+
+.soft-red .main-quick-menu ul li button {background-color: #ec7f62;}
+.soft-red .main-quick-menu ul li button.btn-customer,
+.soft-red .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.soft-red .profile-wrap.mypage .info {background-color: #ec7f62;}
+
+.soft-red .popup-layer .main-quick-menu .btn-delivery.type2,
+.soft-red .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.soft-red .popup-layer .main-quick-menu .btn-delivery.type1 {display: block;}
+
+
+.blue .main-quick-menu ul li button {background-color: #4385cf;}
+.blue .main-quick-menu ul li button.btn-customer,
+.blue .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.blue .profile-wrap.mypage .info {background-color: #4385cf;}
+
+.blue .popup-layer .main-quick-menu .btn-delivery.type1,
+.blue .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.blue .popup-layer .main-quick-menu .btn-delivery.type2 {display: block;}
+
+
+
+.dark-blue .main-quick-menu ul li button {background-color: #54678f;}
+.dark-blue .main-quick-menu ul li button.btn-customer,
+.dark-blue .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.dark-blue .profile-wrap.mypage .info {background-color: #54678f;}
+
+.dark-blue .popup-layer .main-quick-menu .btn-delivery.type1,
+.dark-blue .popup-layer .main-quick-menu .btn-delivery.type2 { display: none;}
+.dark-blue .popup-layer .main-quick-menu .btn-delivery.type3 {display: block;}
+
+.soft-orange .main-quick-menu ul li button {background-color: #c4bdab;}
+.soft-orange .main-quick-menu ul li button.btn-customer,
+.soft-orange .main-quick-menu ul li button.btn-order {background-color: #ff9700;}
+.soft-orange .profile-wrap.mypage .info {background-color: #c4bdab;}
+
+.soft-orange .popup-layer .main-quick-menu .btn-delivery.type2,
+.soft-orange .popup-layer .main-quick-menu .btn-delivery.type3 { display: none;}
+.soft-orange .popup-layer .main-quick-menu .btn-delivery.type1 {display: block;}
+
+
+
+
+/* .green  {background-color: #8dc035;}
+.orange {background-color: #ffb800;}
+.pink {background-color: #e970ad;}
+.soft-green {background-color: #2dc08a;}
+.purple {background-color: #8354b0;}
+.dark-red {background-color: #dd5a7a;}
+.soft-red {background-color: #ec7f62;}
+.blue {background-color: #4385cf;}
+.dark-blue {background-color: #54678f;}
+.soft-orange {background-color: #c4bdab;} */
+
+
+
+
+
+
+

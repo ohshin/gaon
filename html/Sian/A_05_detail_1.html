@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>세일즈그룹수수료조회 &gt; 하이톡</title>
+  </head>
+  <body class="orange">
+    <div class="wrapper">
+        <header class="header">
+            <h1>세일즈그룹수수료조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>            
+        </header>
+        <div class="header-search">
+            <span class="total">총 <em>999</em>건</span>
+            <button class="search" onclick="layer_open('layer04'); return false;">검색</button>
+        </div>
+        <div class="content bg1" id="content">
+            <div class="container">
+                <div class="month-date">2020년 08월</div>
+
+                <div class="data-list">
+                    <div class="member-list">
+                        <p class="member">
+                            <span class="name">허영민<em>가맹점 명</em></span>
+                            <span class="decision no">미확정</span>
+                        </p>
+                        <dl>
+                            <dt>매출금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>미정산 매출금액</dt>
+                            <dd>100 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>지원금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>공제금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>실지급금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                    </div>
+                    <div class="member-list">
+                        <p class="member">
+                            <span class="name">김순<em>가맹점 명</em></span>
+                            <span class="decision">확정</span>
+                        </p>
+                        <dl>
+                            <dt>매출금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>미정산 매출금액</dt>
+                            <dd>0 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>지원금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>공제금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>실지급금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                    </div>
+                    <div class="member-list">
+                        <p class="member">
+                            <span class="name">홍길동<em>가맹점 명</em></span>
+                            <span class="decision no">미확정</span>
+                        </p>
+                        <dl>
+                            <dt>매출금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>미정산 매출금액</dt>
+                            <dd>100 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>지원금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>공제금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>실지급금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                    </div>
+                    <div class="member-list">
+                        <p class="member">
+                            <span class="name">홍길동<em>가맹점 명</em></span>
+                            <span class="decision">확정</span>
+                        </p>
+                        <dl>
+                            <dt>매출금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>미정산 매출금액</dt>
+                            <dd>0 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>지원금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>공제금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                        <dl>
+                            <dt>실지급금액</dt>
+                            <dd>3,389,289 원</dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup-layer" id="layer04">        
+        <div class="pop-table bottom">
+            <div class="pop-bottom">
+                <div class="bg"></div>
+                <div class="pop-layer">
+                    <div class="m_box">	
+                        <div class="btn-header"><button type="button" class="close">close</button></div>
+                        <div class="pop-header">
+                            <button type="button" class="cancel">닫기</button>
+                            <h2><strong>결제 방법</strong>을 선택해주세요.</h2>
+                            <button type="button" class="apply">적용</button>
+                        </div>			  
+                        <div class="content">
+                            <div class="search-box">
+                                <dl>
+                                    <dt>가맹점</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">전체</button>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>판촉스탭</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">전체</button>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>정산년월</dt>
+                                    <dd class="mgt10">
+                                        <p class="month-radio">
+                                            <span>                                                
+                                                <label>
+                                                    <input type="radio" name="radio1" checked>
+                                                    <em>1개월</em>
+                                                </label>											
+                                            </span>
+                                            <span>
+                                                <label>
+                                                    <input type="radio" name="radio1">
+                                                    <em>3개월</em>
+                                                </label>										
+                                            </span>
+                                            <span>
+                                                <label>
+                                                    <input type="radio" name="radio1">
+                                                    <em>6개월</em>
+                                                </label>										
+                                            </span>
+                                            <span>
+                                                <label>
+                                                    <input type="radio" name="radio1">
+                                                    <em>직접입력</em>
+                                                </label>										
+                                            </span>
+                                        </p>
+                                    </dd>
+                                    <dd class="mgt10">
+                                        <p class="month-input">
+                                            <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                            <span class="txt-mark">~</span>
+                                            <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>확장여부</dt>
+                                    <dd>
+                                        <!-- 선택시 class active 추가  -->
+                                        <button class="btn-select">전체</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="pop-footer-btn"><button class="btn-reset">초기화</button></div>						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 사이드메뉴 -->
+    <div class="all_menu">
+        <div class="menu_top">
+            <button class="menu_close">닫기</button>
+        </div>
+        <div class="side-animate">                
+            <div class="info">
+                <p class="name"><strong>김하나</strong>(pulmuone12034)</p>
+                <span class="time">최근 접속 2020.12.01 14:28:49</span>
+            </div>
+            <div class="btn-side">
+                <button class="btn-mypage" onclick ="location.href='MO_mypage_1200.html'">마이페이지</button>
+                <button class="btn-alarm on">알림함<span>99+</span></button>
+            </div>
+            <div class="search-side">
+                <label>
+                    <input type="text" title="검색" placeholder="검색할 메뉴명을 입력해주세요.">
+                </label>
+                <button class="btn-search">검색</button>
+            </div>
+            <ul class="menu">
+                <li>
+                    <button class="on">기준정보</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>주문관리</button>
+                    <ul>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>마감관리</button>
+                    <ul>
+                        <li><button>가맹점재고관리</button></li>
+                        <li><button>고객구역별음용수정(배송)</button></li>
+                        <li><button>가맹점별스텝고객별일일판매현황</button></li>
+                        <li><button>거래선담보채권현황</button></li>
+                        <li><button>고객수금처리</button></li>
+                        <li><button onclick ="location.href='A_05_detail_1.html'">세일즈그룹수수료조회</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>커뮤니케이션</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>가맹점관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>분석관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>VOC관리</button>
+                    <ul>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

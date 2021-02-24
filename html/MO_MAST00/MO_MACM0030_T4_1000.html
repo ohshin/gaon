@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>메시지전송조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>메시지전송조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        
+        
+        <div class="content bg1" id="content">
+            <div class="top-search-box head bg2">
+                <div class="education-target-search message off">
+                    <dl>
+                        <dt>발송일자</dt>
+                        <dd class="mgt10">
+                            <p class="month-radio">
+                                <span>                                                
+                                    <label>
+                                        <input type="radio" name="radio1" checked="">
+                                        <em>당일</em>
+                                    </label>											
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>1주일</em>
+                                    </label>										
+                                </span>
+                                <span>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <em>1개월</em>
+                                    </label>										
+                                </span>
+                            </p>
+                        </dd>
+                        <dd class="mgt10">
+                            <p class="month-input">
+                                <input type="text" class="cal" title="조회시작일" placeholder="YYYY.MM.DD" value="2020.11.01">
+                                <span class="txt-mark">~</span>
+                                <input type="text" class="cal" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01">
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>메시지유형</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>발송상태</dt>
+                        <dd>
+                            <button class="btn-select">전체</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>전송 요청자</dt>
+                        <dd><input type="text" class="type1 w100p" placeholder="요청자를 입력해 주세요."></dd>
+                    </dl>
+                    <dl>
+                        <dt>수신번호</dt>
+                        <dd><input type="text" class="type1 w100p" placeholder="수신번호를 입력해 주세요."></dd>
+                    </dl>
+                    <dl>
+                        <dt>발송내용</dt>
+                        <dd><input type="text" class="type1 w100p" placeholder="발송내용를 입력해 주세요."></dd>
+                    </dl>
+                </div> 
+                <div>
+                    <button class="btn-more"><span>상세검색</span></button>
+                    <button class="top-dark-blue" disabled>조회</button>
+                </div>                         
+            </div>
+            <div class="container">
+                
+                <div class="top-search">
+                    <span class="total">총 <em>999</em>건</span>
+                </div>
+                <div class="content-wrap step">
+                    <div class="customer-list message">
+                        <ul>
+                            <li>
+                                <button>
+                                    <span class="name">홍길동 | 문자</span>                                   
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                    <span class="txt">홍길동고객님, 풀무원<br>녹즙입니다. 10월 3일 토요일은 정상배송합니다. 감사합니다.</span>
+                                    <span class="date">2020-09-30 12:00:00</span>
+                                </button>
+                                <span class="send mege">발송</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="name">홍길동 | 문자</span>                                   
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                    <span class="txt">홍길동고객님, 풀무원<br>녹즙입니다. 10월 3일 토요일은 정상배송합니다. 감사합니다.</span>
+                                    <span class="date">2020-09-30 12:00:00</span>
+                                </button>
+                                <span class="wait mege">발송대기</span>
+                            </li>  
+                            <li>
+                                <button>
+                                    <span class="name">홍길동 | 문자</span>                                   
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                    <span class="txt">홍길동고객님, 풀무원<br>녹즙입니다. 10월 3일 토요일은 정상배송합니다. 감사합니다.</span>
+                                    <span class="date">2020-09-30 12:00:00</span>
+                                </button>
+                                <span class="send mege">발송</span>
+                            </li> 
+                            <li>
+                                <button>
+                                    <span class="name">홍길동 | 문자</span>                                   
+                                    <span class="tel">010 - 0000 - 0000</span>
+                                    <span class="txt">홍길동고객님, 풀무원<br>녹즙입니다. 10월 3일 토요일은 정상배송합니다. 감사합니다.</span>
+                                    <span class="date">2020-09-30 12:00:00</span>
+                                </button>
+                                <span class="wait mege">발송대기</span>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <!-- 등록된 글이 없습니다.  -->
+                    <div class="search-no-data">검색결과가 없습니다.</div>
+                </div>
+            </div> 
+            <button class="btn-floating-top" id="top">TOP</button>              
+        </div>
+    </div>
+</body>
+</html>

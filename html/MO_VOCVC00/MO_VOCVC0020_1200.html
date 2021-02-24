@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>클래임관리</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>클레임등록</h1>
+            <button class="close">&nbsp;</button>
+            <button class="writing" disabled>&nbsp;</button>   
+        </header>      
+        
+        
+       
+        
+        <div class="content" id="content">
+            <div class="community-writing w10">
+                <dl>
+                    <dt>분류</dt>
+                    <dd>
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select noline">전체</button>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>품목코드/명</dt>
+                    <dd>
+                        <!-- 선택시 class active 추가  -->
+                        <button class="btn-select noline">전체</button>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>수량</dt>
+                    <dd><input type="tel" class="type1 noline w100p" placeholder="수량를 입력해 주세요."></dd>
+                </dl>
+                <dl>
+                    <dt>입고일자</dt>
+                    <dd class="month-input"><input type="text" class="cal noline w100p" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01"></dd>	
+                </dl>
+                <dl>
+                    <dt class="li23">제조/유통 <br>기한일자</dt>
+                    <dd class="month-input"><input type="text" class="cal noline w100p" title="조회종료일" placeholder="YYYY.MM.DD" value="2020.12.01"></dd>	
+                </dl>
+                <dl>
+                    <dt class="w-block">고객상담요청</dt>                    
+                    <dd class="w-block month-radio mgb10">
+                        <span>                                                
+                            <label>
+                                <input type="radio" name="building" checked="">
+                                <em>미요청</em>
+                            </label>											
+                        </span>
+                        <span>
+                            <label>
+                                <input type="radio" name="building">
+                                <em>요청</em>
+                            </label>										
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="w-block">고객 정보<button class="info-change-arrow">정보 변경</button></dt>
+                    <dd class="text-box w-block">
+                        <div class="claim-info">
+                            <dl>
+                                <dt>고객명</dt>
+                                <dd>홍길동 (123456789)</dd>
+                            </dl>
+                            <dl>
+                                <dt>전화번호</dt>
+                                <dd>0000-0000-000000</dd>
+                            </dl>
+                            <dl>
+                                <dt>성별</dt>
+                                <dd>남자</dd>
+                            </dl> 
+                            <dl>
+                                <dt>나이</dt>
+                                <dd>50 세</dd>
+                            </dl>                                
+                        </div>                                                        
+                    </dd>
+                </dl>
+                <ul class="text-area">                        
+                    <li>
+                        <textarea class="textarea w100p h100p" placeholder="메일 내용 입력">내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 내용을 입력했습니다 
+                        </textarea>                            
+                    </li>
+                </ul>
+                <div class="attach-list pdlg30">
+                    <h3 class="big-title3 pdb10">첨부파일</h3>
+                    <p class="btn-list">
+                        <span class="del">
+                            <button class="attach-del">삭제</button>
+                            <button><span>붙임1.첨부파일 명은 1줄만 노출합니다노출합니다.pdf</span></button>
+                        </span>
+                        <span class="del">
+                            <button class="attach-del">삭제</button>
+                            <button><span>붙임1.첨부파일 명은 1줄만 노출합니다.pdf</span></button>
+                        </span>
+                    </p>
+                </div>                
+            </div> 
+              
+                       
+        </div>
+        
+        <div class="footer-attach">
+            <div class="btn-box">
+                <button class="ft-btn-camera">카메라</button>
+                <button class="ft-btn-album">앨범</button>
+                <button class="ft-btn-file">파일</button>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

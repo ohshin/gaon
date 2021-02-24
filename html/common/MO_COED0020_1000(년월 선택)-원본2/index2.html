@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="JavaScript date time picker.">
+  <meta name="author" content="Chen Fengyuan">
+  <title>Picker.js</title>
+  <link rel="stylesheet" href="css/picker.css">
+</head>
+<body>
+
+ 
+
+  <!-- Content -->
+  <div class="container">
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h6>Demo</h6>
+        <input type="text" class="form-control js-date-picker" value="2021,  2월">
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/picker.js"></script>
+
+  <script type="text/javascript">
+    window.onload = function () {
+        new Picker(document.querySelector('.js-date-picker'), {
+            format: 'YYYY, MMM',
+            text: {
+                title: 'Pick a date',
+            },
+        });
+    };
+  </script>
+</body>
+</html>

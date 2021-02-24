@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>비밀번호 변경 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>비밀번호 변경</h1>
+            <button class="prev" onclick="history.back()"></button>           
+        </header>
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="tit-box2">새롭게 사용할 비밀번호를 설정해주세요.</div>
+                    <div class="content-list password">
+                        <dl>
+                            <dt>현재 비밀번호</dt>
+                            <!-- 단일 ID -->
+                            <dd><input type="tel" class="type1 w100p" placeholder="사용중인 비밀번호를 입력해주세요."></dd>
+                            <!-- 다중 ID -->
+                            <dd><button class="btn-select">선택</button></dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호</dt>
+                            <dd><input type="tel" class="type1 w100p" placeholder="새롭게 사용할 비밀번호를 입력해주세요."></dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호 확인</dt>
+                            <dd><input type="tel" class="type1 w100p" placeholder="입력한 비밀번호를 재 입력해주세요."></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-footer">
+            <button class="btn-ok">비밀번호 변경</button>
+        </div>
+    </div>
+
+</body>
+</html>

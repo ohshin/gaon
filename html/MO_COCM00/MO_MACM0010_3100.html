@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>고객정보조회 &gt; 하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>고객정보조회</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>  
+        </header>
+        <div class="customer-detail head">
+            <div class="title top">
+                <span class="company-name">[가상] 사무실 | 1</span>
+                <span class="name">홍길동</span>                                   
+                <span class="address">서울 강남구 광평로 280 수서 2층</span>
+                <span class="tel">010 - 0000 - 0000</span>
+                <span class="no drinking">휴면</span>
+            </div>
+        </div>
+        <div class="top-menu">
+            <div class="tabs-menu hbox">
+                <button class="active">고객 정보</button>
+                <button>결제 정보</button>
+            </div>
+        </div>
+        
+        <div class="content" id="content">
+            <div class="container">
+                <div class="wrap_cons education">
+                    <div class="cons">
+                        <div class="setp-information-list pdlg0">
+                            <h4>결제정보</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>결제자명</dt>
+                                    <dd>홍길동</dd>
+                                </dl>
+                                <dl>
+                                    <dt>결제자연락처</dt>
+                                    <dd>010-0000-0000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>정기결제수단</dt>
+                                    <dd>CMS</dd>
+                                </dl>
+                                <dl>
+                                    <dt>약정일자동결제</dt>
+                                    <dd>Y</dd>
+                                </dl>                                                                
+                            </div>
+                            <h4>CMS계좌정보</h4>
+                            <div class="setp-list w130">
+                                <dl>
+                                    <dt>신청 상태</dt>
+                                    <dd>
+                                        <p>고객등록예정</p>
+                                        <div class="btn-toggle mgt10">
+                                            <button class="wp60">모바일 등록 재전송</button>
+                                            <button class="wp40">수정</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청 상태</dt>
+                                    <dd>
+                                        <p>접수예정</p>
+                                        <div class="btn-toggle mgt10">
+                                            <button class="wp60">신규신청접수</button>
+                                            <button class="wp40">수정</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청 상태</dt>
+                                    <dd>접수중</dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청 상태</dt>
+                                    <dd>
+                                        <p class="red">출금실패</p>
+                                        <div class="btn-toggle mgt10">
+                                            <button class="wp60">CMS해지신청</button>
+                                            <button class="wp40">수정</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청 상태</dt>
+                                    <dd>
+                                        <p class="red">승인반려</p>
+                                        <div class="btn-toggle mgt10">
+                                            <button>재등록</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>신청구분</dt>
+                                    <dd>모바일등록 <br>(신청일 : 2020-01-01)</dd>
+                                </dl> 
+                                <dl>
+                                    <dt>출금은행</dt>
+                                    <dd>고객등록예정</dd>
+                                </dl>
+                                <dl>
+                                    <dt>출금계좌번호</dt>
+                                    <dd>고객등록예정</dd>
+                                </dl>
+                                <dl>
+                                    <dt>예금주명</dt>
+                                    <dd>고객등록예정</dd>
+                                </dl>
+                                <dl>
+                                    <dt>생년월일</dt>
+                                    <dd>고객등록예정</dd>
+                                </dl>
+                                <dl>
+                                    <dt>정기결제등록일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>출금약정일</dt>
+                                    <dd>5일</dd>
+                                </dl>
+                                <dl>
+                                    <dt>정기결제시작일</dt>
+                                    <dd>2020-01-01</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현금영수증 자진발급</dt>
+                                    <dd>Y</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현금영수증 발급번호</dt>
+                                    <dd>000000000000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현금영수증구분</dt>
+                                    <dd>개인</dd>
+                                </dl>
+                                <dl>
+                                    <dt>CMS증빙파일</dt>
+                                    <dd class="attach-list">
+                                        <!-- 첨부파일과 첨부파일 삭제가 동시에 있는 경우 -->
+                                        <p class="btn-list">
+                                            <span class="del">
+                                                <button class="attach-del">삭제</button>
+                                                <button><span>붙임1.첨부파일</span></button>
+                                            </span>
+                                            <span class="del">
+                                                <button class="attach-del">삭제</button>
+                                                <button><span>첨부파일.pdf</span></button>
+                                            </span>
+                                        </p>
+                                        <!-- 첨부파일만 있는 경우 -->
+                                        <p class="btn-list">
+                                            <button><span>붙임1.첨부파일 .pdf</span></button>
+                                        </p>
+                                    </dd>
+                                </dl>                                                             
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="cons bg2">
+                        <div class="education-detail">                       
+                            <div class="setp-information-list">
+                                <h4>교육 정보</h4>
+                                <div class="setp-list">
+                                    <dl>
+                                        <dt>교육명</dt>
+                                        <dd>모닝스탭 심화 과정</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>기수</dt>
+                                        <dd>1 기</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>그룹</dt>
+                                        <dd>수도권-신촌</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>신청기간</dt>
+                                        <dd>2020-11-13(금) ~ 2020-11-31(월)</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>교육기간</dt>
+                                        <dd>2020-11-13(금) ~ 2020-11-31(월)</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>교육시간</dt>
+                                        <dd>10:00 ~ 14:00</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>교육구분</dt>
+                                        <dd>온라인</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>교육장소</dt>
+                                        <dd>서울 수서 풀무원녹즙 본사</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>교육대상</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>특이사항</dt>
+                                        <dd>-</dd>
+                                    </dl> 
+                                    <dl>
+                                        <dt>수료기준</dt>
+                                        <dd>2020-09-09</dd>
+                                    </dl>                                
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- 신청내역이 없습니다.  -->
+                        <div class="search-no-data">신청내역이 없습니다.</div>
+                    </div>
+                </div>
+            </div> 
+                         
+        </div>
+        <div class="btn-footer">
+            <button class="footer-dark-blue wp60">고객정보 수정</button>
+        </div>
+    </div>
+    <button class="btn-floating-top" id="top">TOP</button> 
+</body>
+</html>

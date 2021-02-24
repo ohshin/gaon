@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../../css/morpheus-style.css" />
+    <script src="../../js/libs/jquery-3.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <title>하이톡</title>
+  </head>
+  <body>
+    <div class="wrapper orange">
+        <header class="header">
+            <h1>마이페이지</h1>
+            <button class="prev" onclick="history.back()"></button>
+            <button class="home alarm"></button>
+            <button class="side-menu"><span>&nbsp;</span></button>            
+        </header>
+        <div class="content" id="content">
+            <div class="container">
+                <div class="profile-wrap mypage">
+                    <div class="info">
+                        <p class="img"><img src="../../img/tc-photo.jpg" alt=""></p><!-- 기본 이미지 img-user.png -->
+                        <button class="info-name">
+                            <span class="name">김하나</span>
+                            <span class="id">pulmuone12034</span>
+                        </button>                        
+                    </div>
+                    <h3>내 정보</h3>
+                    <ul class="mypage-info">
+                        <li><button>내 정보 수정</button></li>
+                        <li><button>비밀번호 변경</button></li>
+                        <li><button class="no-arrow">간편로그인 설정<em>꺼짐</em></button></li>
+                        <li><button>접속기록</button></li>
+                    </ul>
+                    <h3 class="bdt1">시스템 설정</h3>
+                    <ul class="mypage-info">
+                        <li>
+                            <span>푸시 메시지 수신</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                        <li><button class="no-arrow" onclick="layer_open('layer03'); return false;">테마 컬러 설정<em class="c-color">칼라선택</em></button></li>
+                        <li><button class="no-arrow">글자 크기 수정<em>보통</em></button></li>
+                    </ul>
+                    <div class="ver">VER 1.0.0</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-layer" id="layer03">        
+        <div class="pop-table bottom">
+            <div class="pop-bottom">
+                <div class="bg"></div>
+                <div class="pop-layer">
+                    <div class="m_box">	
+                        <div class="btn-header"><button type="button" class="close">close</button></div>
+                        <div class="pop-header">
+                            <button type="button" class="cancel">닫기</button>
+                            <h2 class="bottom">테마를 선택해 주세요.</h2>
+                        </div>			  
+                        <div class="content">
+                            <div class="main-quick-menu">
+                                <ul>
+                                    <li class="frist">
+                                        <button class="btn-delivery type1">
+                                            <h3 class="tit">테마선택</h3>
+                                            <span>Theme 1</span>
+                                        </button>
+                                        <button class="btn-delivery type2">
+                                            <h3 class="tit">테마선택</h3>
+                                            <span>Theme 2</span>
+                                        </button>
+                                        <button class="btn-delivery type3">
+                                            <h3 class="tit">테마선택</h3>
+                                            <span>Theme 3</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn-custom">
+                                            <h3 class="tit"><span class="star">맞춤제품</span></h3>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="payment-box color-choice check">
+                                <li>
+                                    <span><button class="green check"></button></span>
+                                    <span><button class="orange"></button></span>
+                                    <span><button class="pink"></button></span>
+                                    <span><button class="soft-green"></button></span>
+                                    <span><button class="purple"></button></span>
+                                </li>
+                                <li>
+                                    <span><button class="dark-red"></button></span>
+                                    <span><button class="soft-red"></button></span>
+                                    <span><button class="blue"></button></span>
+                                    <span><button class="dark-blue"></button></span>
+                                    <span><button class="soft-orange"></button></span>
+                                </li>
+                            </ul>
+                        </div>
+                       <div class="pop-footer-btn"><button class="btn-color-change">테마적용</button></div>						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 사이드메뉴 -->
+    <div class="all_menu">
+        <div class="menu_top">
+            <button class="menu_close">닫기</button>
+        </div>
+        <div class="side-animate">                
+            <div class="info">
+                <p class="name"><strong>김하나</strong>(pulmuone12034)</p>
+                <span class="time">최근 접속 2020.12.01 14:28:49</span>
+            </div>
+            <div class="btn-side">
+                <button class="btn-mypage" onclick ="location.href='MO_mypage_1200.html'">마이페이지</button>
+                <button class="btn-alarm on">알림함<span>99+</span></button>
+            </div>
+            <div class="search-side">
+                <label>
+                    <input type="text" title="검색" placeholder="검색할 메뉴명을 입력해주세요.">
+                </label>
+                <button class="btn-search">검색</button>
+            </div>
+            <ul class="menu">
+                <li>
+                    <button class="on">기준정보</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>주문관리</button>
+                    <ul>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>마감관리</button>
+                    <ul>
+                        <li><button>가맹점재고관리</button></li>
+                        <li><button>고객구역별음용수정(배송)</button></li>
+                        <li><button>가맹점별스텝고객별일일판매현황</button></li>
+                        <li><button>거래선담보채권현황</button></li>
+                        <li><button>고객수금처리</button></li>
+                        <li><button onclick ="location.href='A_05_detail_1.html'">세일즈그룹수수료조회</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>커뮤니케이션</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>가맹점관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>분석관리</button>
+                    <ul>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>VOC관리</button>
+                    <ul>
+                        <li><button>품목정보조회</button></li>
+                        <li><button>스탭정보조회</button></li>
+                        <li><button>고객정보가맹점매칭</button></li>
+                        <li><button>고객등록</button></li>
+                        <li><button>고객정보조회</button></li>
+                        <li><button>고객메시지전송</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
