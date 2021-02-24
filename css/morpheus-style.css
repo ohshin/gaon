@@ -13,6 +13,8 @@
   --yellow: #feca57;
   --red: #c0392b;
   --white: #ffffff;
+  --dark-background-color: #111111;
+    --dark-text-color: #eeeeee;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -28,6 +30,16 @@
 body {
   background: var(--background-color);
   color: var(--text);
+}
+body.theme-dark {
+    --background-color: var(--dark-background-color);
+    --text-color: var(dark-text-color);
+}
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --background-color: var(--dark-background-color);
+        --text-color: var(--dark-text-color);
+    }
 }
 
 .full_loding {height: 100%;position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 999999999;background: rgba(0, 0, 0, 0.3);}
@@ -3001,6 +3013,12 @@ h3.tit-line {padding: 2.4rem 0 1.6rem;color: #000;font-size: 1.4rem;font-weight:
 @media (prefers-color-scheme:dark) {
   .header .prev {background: url(../img/btn-icon-cancel.png) no-repeat center center;background-size: 2.8rem;}
   .header .home {background: url(../img/btn-icon-delete.png) no-repeat center center;background-size: 2.8rem;}
+}
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --background-color: var(--dark-background-color);
+        --text-color: var(--dark-text-color);
+    }
 }
 
 
