@@ -173,5 +173,21 @@
             <button class="btn-floating-top" id="top">TOP</button>              
         </div>
     </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "auto";
+
+    applyTheme(savedTheme);
+
+    for (const optionElement of document.querySelectorAll("#theme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+    }
+
+    document.querySelector("#theme").addEventListener("change", function () {
+        localStorage.setItem("theme", this.value);
+        applyTheme(this.value);
+    });
+});
+    </script>
 </body>
 </html>
