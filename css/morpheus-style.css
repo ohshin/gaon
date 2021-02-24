@@ -2,23 +2,32 @@
 @import "morpheus-common.css";
 
 :root {
-  color-scheme: dark light; /* stylelint-disable-line property-no-unknown */
-
-  --heading-color: red;
-  --duration: 0.5s;
-  --timing: ease;
+  --background-color: #f7f6ee;
+  --secondary-color: #fbfefb;
+  --text-dark: #101010;
+  --text: #333333;
+  --text-light: #7b7b85;
+  --text-lighter: #ababab;
+  --blue: #3498db;
+  --green: #27ae60;
+  --yellow: #feca57;
+  --red: #c0392b;
+  --white: #ffffff;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1e1f23;
+    --secondary-color: #232428;
+    --text-dark: #efefef;
+    --text: #c4c5c9;
+    --text-light: #6c6d71;
+    --text-lighter: #8e8f93;
+  }
+}
+/* Sample css for an element */
 body {
-  margin: 0;
-  transition:
-    color var(--duration) var(--timing),
-    background-color var(--duration) var(--timing);
-  font-family: sans-serif;
-  font-size: 12pt;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
+  background: var(--background-color);
+  color: var(--text);
 }
 
 .full_loding {height: 100%;position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 999999999;background: rgba(0, 0, 0, 0.3);}
