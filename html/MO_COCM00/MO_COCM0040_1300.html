@@ -12,29 +12,7 @@
     <script src="../../js/libs/jquery-3.1.1.min.js"></script>
     <script src="../../js/swiper.min.js"></script>
     <script src="../../js/ui.js"></script>
-    <script type="text/javascript">
-// 창이 열리자 마자 iframe 을 편집모드로 전환하는 방법
-window.onload = function initEditor() {
-Editor0 = document.getElementById("styleIframe").contentWindow.document;
-Editor0.designMode = "on";
-/* 편집 모드에 기본 스타일을 정의하기 */
-/* 기본적으로 textarea 에서 iframe 의 내용을 볼 때 <head>테그(아래에 있는) 부분이 없어도 상관은 없다. */
-Editor0.open();
-Editor0.write("<html>");
-Editor0.write("<head>");
-Editor0.write("<style type="text/scc">");
-Editor0.write("body { padding:0px; margin:5px; font-size:9pt; font-family:Dotum; }");
-Editor0.write("td { font-size:9pt; font-family:Dotum; }");
-Editor0.write("</style>");
-Editor0.write("</head><body>");
-Editor0.write("</body></html>");
-Editor0.close();
-}
-/* iframe 값을 textarea 로 옮겨주는 함수 */
-function copy() {
-   form.textarea.value = styleIframe.document.body.innerHTML;
-}
-</script>
+    <script src="../editor/js/dext5editor.js"></script>
 
     <title>글쓰기 &gt; 하이톡</title>
   </head>
@@ -69,14 +47,12 @@ function copy() {
                     </dd>
                 </dl>  
                 <!-- 2021-02-23 수정 -->
-                <ul class="text-area">                        
-                    <li>
-                        <form name="form"
-   <iframe id="styleIframe"></iframe>
-   <input type="button" value="내용보기" onClick="copy()">
-   <textarea name="textarea" cols="40" rows="10"></textarea></form>                            
-                    </li>
-                </ul>
+                <div class="text-area" style="height: 300px">
+                    <script type="text/javascript">
+                        var editor = new Dext5editor("userContent2");
+                    </script>
+                </div>
+                
                 <!-- 2021-02-23 수정 -->
             </div>
             <!-- 2021-02-23 수정 위치 변경 -->
